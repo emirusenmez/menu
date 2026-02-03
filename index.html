@@ -94,6 +94,33 @@
             font-weight: 500;
         }
 
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .lang-btn.active {
+            background: white;
+            color: #C75B39;
+            border-color: white;
+        }
+
         /* Kategori Navigasyonu */
         .category-nav {
             background: white;
@@ -147,7 +174,7 @@
         .slider-container {
             position: relative;
             width: 100%;
-            height: 220px;
+            height: 280px;
             overflow: hidden;
         }
 
@@ -191,47 +218,47 @@
         }
 
         .slide-content-text {
-            position: relative;
-            z-index: 2;
-            background: rgba(0,0,0,0.3);
-            padding: 15px 20px;
-            border-radius: 12px;
-            backdrop-filter: blur(5px);
+            display: none;
         }
 
         .slide-title {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 700;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            letter-spacing: 0.5px;
         }
 
         .slide-subtitle {
-            font-size: 1rem;
-            opacity: 0.9;
+            font-size: 0.95rem;
+            opacity: 0.95;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
         }
 
         .slider-dots {
             position: absolute;
-            bottom: 15px;
+            bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
-            gap: 8px;
+            gap: 10px;
+            z-index: 3;
         }
 
         .dot {
-            width: 10px;
-            height: 10px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.4);
             cursor: pointer;
             transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.6);
         }
 
         .dot.active {
             background: white;
-            transform: scale(1.2);
+            transform: scale(1.3);
+            box-shadow: 0 2px 8px rgba(255,255,255,0.5);
         }
 
         /* Kategori Grid - Ana Sayfa */
@@ -605,11 +632,37 @@
             }
 
             .slider-container {
-                height: 280px;
+                height: 350px;
             }
 
             .slide-title {
                 font-size: 2.5rem;
+            }
+
+            .slide-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .slide-content-text {
+                padding: 25px 40px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .slider-container {
+                height: 250px;
+            }
+
+            .slide-title {
+                font-size: 1.5rem;
+            }
+
+            .slide-subtitle {
+                font-size: 0.85rem;
+            }
+
+            .slide-content-text {
+                padding: 15px 20px;
             }
         }
     </style>
@@ -628,9 +681,18 @@
                     <path d="M19 12H5M12 19l-7-7 7-7"/>
                 </svg>
             </button>
-            <div class="logo" id="site-logo">MENU</div>
+            <div>
+                <div class="logo" id="site-logo">MENU</div>
+                <div class="location" id="site-location">Konum</div>
+            </div>
         </div>
-        <div class="location" id="site-location">Konum</div>
+        <div class="header-right">
+            <button class="lang-btn active" data-lang="tr" onclick="changeLanguage('tr')">TR</button>
+            <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
+            <button class="lang-btn" data-lang="es" onclick="changeLanguage('es')">ES</button>
+            <button class="lang-btn" data-lang="de" onclick="changeLanguage('de')">DE</button>
+            <button class="lang-btn" data-lang="ar" onclick="changeLanguage('ar')">AR</button>
+        </div>
     </header>
 
     <!-- Kategori Navigasyonu -->
@@ -705,6 +767,7 @@
         let allProducts = [];
         let currentSlide = 0;
         let sliderInterval = null;
+        let currentLang = localStorage.getItem('menuLang') || 'tr';
 
         // Veri yukle
         async function loadData() {
@@ -730,10 +793,51 @@
             }
         }
 
+        // Dil degistirme
+        function changeLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('menuLang', lang);
+
+            // Dil butonlarini guncelle
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                if (btn.dataset.lang === lang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // HTML lang ve dir attributes
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+            // Sayfayi yeniden render et
+            renderPage();
+        }
+
+        // Sayfa yuklendinde dil butonlarini ayarla
+        function initLanguage() {
+            // Dil butonlarini guncelle
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                if (btn.dataset.lang === currentLang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // HTML lang ve dir attributes
+            document.documentElement.lang = currentLang;
+            document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+        }
+
         function renderPage() {
+            // Dil ayarlarini uygula
+            initLanguage();
+
             // Site bilgileri
-            document.getElementById('site-logo').textContent = menuData.site.logo;
-            document.getElementById('site-location').textContent = menuData.site.konum;
+            document.getElementById('site-logo').textContent = menuData.site[currentLang].logo;
+            document.getElementById('site-location').textContent = menuData.site[currentLang].konum;
 
             // Slider
             renderSlider();
@@ -774,8 +878,8 @@
                         <div class="slide-bg" style="background-image: url('${sliderImages[i]}');"></div>
                         <div class="slide-overlay"></div>
                         <div class="slide-content-text">
-                            <div class="slide-title">${slide.baslik}</div>
-                            <div class="slide-subtitle">${slide.altBaslik}</div>
+                            <div class="slide-title">${slide.baslik[currentLang]}</div>
+                            <div class="slide-subtitle">${slide.altBaslik[currentLang]}</div>
                         </div>
                     </div>
                 </div>
@@ -812,9 +916,9 @@
             grid.innerHTML = menuData.kategoriler.map(kat => `
                 <div class="category-card" data-category="${kat.id}">
                     <div class="category-image">
-                        <img src="${categoryImages[kat.id]}" alt="${kat.isim}">
+                        <img src="${categoryImages[kat.id]}" alt="${kat.isim[currentLang]}">
                     </div>
-                    <div class="category-name">${kat.icon} ${kat.isim}</div>
+                    <div class="category-name">${kat.icon} ${kat.isim[currentLang]}</div>
                 </div>
             `).join('');
 
@@ -830,7 +934,7 @@
             const tabs = document.getElementById('category-tabs');
 
             tabs.innerHTML = menuData.kategoriler.map((kat, i) => `
-                <button class="category-tab ${i === 0 ? 'active' : ''}" data-target="${kat.id}">${kat.isim}</button>
+                <button class="category-tab ${i === 0 ? 'active' : ''}" data-target="${kat.id}">${kat.isim[currentLang]}</button>
             `).join('');
 
             // Tab tiklama
@@ -847,17 +951,17 @@
             menuPage.innerHTML = menuData.kategoriler.map(kat => `
                 <section class="menu-category" id="${kat.id}">
                     <div class="menu-category-header">
-                        <span>${kat.icon}</span> ${kat.isim}
+                        <span>${kat.icon}</span> ${kat.isim[currentLang]}
                     </div>
                     ${kat.urunler.map((urun, idx) => `
                         <div class="product-card" onclick='openProductDetail(${JSON.stringify(urun).replace(/'/g, "&#39;")})'>
                             <div class="product-info">
-                                <div class="product-name">${urun.isim}</div>
-                                <div class="product-desc">${urun.aciklama}</div>
+                                <div class="product-name">${urun.isim[currentLang]}</div>
+                                <div class="product-desc">${urun.aciklama[currentLang]}</div>
                                 <div class="product-price">${urun.fiyat}</div>
                             </div>
                             ${urun.gorsel
-                                ? `<img class="product-image" src="${urun.gorsel}" alt="${urun.isim}">`
+                                ? `<img class="product-image" src="${urun.gorsel}" alt="${urun.isim[currentLang]}">`
                                 : `<div class="product-image-placeholder">Gorsel</div>`
                             }
                         </div>
@@ -966,19 +1070,19 @@
             }
 
             const filtered = allProducts.filter(p =>
-                p.isim.toLowerCase().includes(query) ||
-                p.aciklama.toLowerCase().includes(query)
+                p.isim[currentLang].toLowerCase().includes(query) ||
+                p.aciklama[currentLang].toLowerCase().includes(query)
             );
 
             results.innerHTML = filtered.map(p => `
                 <div class="product-card" onclick='openProductDetail(${JSON.stringify(p).replace(/'/g, "&#39;")})'>
                     <div class="product-info">
-                        <div class="product-name">${p.isim}</div>
-                        <div class="product-desc">${p.aciklama}</div>
+                        <div class="product-name">${p.isim[currentLang]}</div>
+                        <div class="product-desc">${p.aciklama[currentLang]}</div>
                         <div class="product-price">${p.fiyat}</div>
                     </div>
                     ${p.gorsel
-                        ? `<img class="product-image" src="${p.gorsel}" alt="${p.isim}">`
+                        ? `<img class="product-image" src="${p.gorsel}" alt="${p.isim[currentLang]}">`
                         : `<div class="product-image-placeholder">Gorsel</div>`
                     }
                 </div>
@@ -990,9 +1094,6 @@
             showMenuPage(category);
         }
 
-        function toggleLanguage() {
-            alert('Dil secenegi yakinda eklenecek!');
-        }
 
         // Urun detay modal
         function openProductDetail(product) {
@@ -1001,12 +1102,12 @@
 
             body.innerHTML = `
                 ${product.gorsel
-                    ? `<img class="product-detail-image" src="${product.gorsel}" alt="${product.isim}">`
+                    ? `<img class="product-detail-image" src="${product.gorsel}" alt="${product.isim[currentLang]}">`
                     : `<div class="product-detail-image-placeholder">Görsel Yok</div>`
                 }
                 <div class="product-detail-info">
-                    <div class="product-detail-name">${product.isim}</div>
-                    <div class="product-detail-desc">${product.aciklama}</div>
+                    <div class="product-detail-name">${product.isim[currentLang]}</div>
+                    <div class="product-detail-desc">${product.aciklama[currentLang]}</div>
                     <div class="product-detail-price">${product.fiyat}</div>
                 </div>
             `;

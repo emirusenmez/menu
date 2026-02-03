@@ -22,6 +22,29 @@
             padding-bottom: 80px;
         }
 
+        /* Loading */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 1.2rem;
+            color: #C75B39;
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f0f0f0;
+            border-top-color: #C75B39;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
         /* Header */
         header {
             background: linear-gradient(135deg, #C75B39, #D4735A);
@@ -140,13 +163,7 @@
             position: relative;
         }
 
-        .slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .slide-placeholder {
+        .slide-content {
             width: 100%;
             height: 100%;
             display: flex;
@@ -156,18 +173,20 @@
             color: white;
             text-align: center;
             padding: 20px;
+            position: relative;
         }
 
-        .slide-placeholder.slide-1 {
-            background: linear-gradient(135deg, #C75B39 0%, #E8956E 100%);
+        .slide-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
         }
 
-        .slide-placeholder.slide-2 {
-            background: linear-gradient(135deg, #2C5F2D 0%, #4A9B4E 100%);
-        }
-
-        .slide-placeholder.slide-3 {
-            background: linear-gradient(135deg, #1E3A5F 0%, #3B6FA0 100%);
+        .slide-content-text {
+            position: relative;
+            z-index: 1;
         }
 
         .slide-title {
@@ -237,19 +256,33 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
 
-        .category-image-placeholder {
+        .category-image {
             width: 100%;
             height: 120px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2.5rem;
+            position: relative;
+            overflow: hidden;
         }
 
-        .category-image-placeholder.icecekler { background: linear-gradient(135deg, #A0522D, #CD853F); }
-        .category-image-placeholder.yemekler { background: linear-gradient(135deg, #C75B39, #E8956E); }
-        .category-image-placeholder.aperatifler { background: linear-gradient(135deg, #2C5F2D, #4A9B4E); }
-        .category-image-placeholder.nargileler { background: linear-gradient(135deg, #1E3A5F, #3B6FA0); }
+        .category-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .category-image-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
 
         .category-name {
             padding: 12px 15px;
@@ -334,6 +367,14 @@
             font-weight: 700;
             font-size: 1rem;
             color: #333;
+        }
+
+        .product-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            object-fit: cover;
+            flex-shrink: 0;
         }
 
         .product-image-placeholder {
@@ -474,282 +515,47 @@
     </style>
 </head>
 <body>
+    <!-- Loading -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
     <!-- Header -->
-    <header>
+    <header style="display: none;" id="header">
         <div class="header-left">
             <button class="back-btn" id="back-btn" onclick="showHome()">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M19 12H5M12 19l-7-7 7-7"/>
                 </svg>
             </button>
-            <div class="logo">MENU</div>
+            <div class="logo" id="site-logo">MENU</div>
         </div>
-        <div class="location">Konum</div>
+        <div class="location" id="site-location">Konum</div>
     </header>
 
     <!-- Kategori Navigasyonu -->
     <nav class="category-nav" id="category-nav">
-        <div class="category-nav-inner">
-            <button class="category-tab active" data-target="icecekler">Icecekler</button>
-            <button class="category-tab" data-target="yemekler">Yemekler</button>
-            <button class="category-tab" data-target="aperatifler">Aperatifler</button>
-            <button class="category-tab" data-target="nargileler">Nargileler</button>
-        </div>
+        <div class="category-nav-inner" id="category-tabs"></div>
     </nav>
 
     <!-- Ana Sayfa -->
-    <div id="home-page">
+    <div id="home-page" style="display: none;">
         <!-- Hero Slider -->
         <div class="slider-container">
-            <div class="slider" id="slider">
-                <div class="slide">
-                    <div class="slide-placeholder slide-1">
-                        <div class="slide-title">Lezzette, Keyifte</div>
-                        <div class="slide-subtitle">En taze lezzetler sizlerle</div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-placeholder slide-2">
-                        <div class="slide-title">Taze & Dogal</div>
-                        <div class="slide-subtitle">Gunluk taze malzemeler</div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-placeholder slide-3">
-                        <div class="slide-title">Ozel Lezzetler</div>
-                        <div class="slide-subtitle">Sizin icin hazirladik</div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-dots">
-                <div class="dot active" data-slide="0"></div>
-                <div class="dot" data-slide="1"></div>
-                <div class="dot" data-slide="2"></div>
-            </div>
+            <div class="slider" id="slider"></div>
+            <div class="slider-dots" id="slider-dots"></div>
         </div>
 
         <!-- Kategoriler -->
         <div class="categories-section">
             <h2 class="section-title">Kategoriler</h2>
-            <div class="categories-grid">
-                <div class="category-card" data-category="icecekler">
-                    <div class="category-image-placeholder icecekler">&#9749;</div>
-                    <div class="category-name">Icecekler</div>
-                </div>
-                <div class="category-card" data-category="yemekler">
-                    <div class="category-image-placeholder yemekler">&#127869;</div>
-                    <div class="category-name">Yemekler</div>
-                </div>
-                <div class="category-card" data-category="aperatifler">
-                    <div class="category-image-placeholder aperatifler">&#127839;</div>
-                    <div class="category-name">Aperatifler</div>
-                </div>
-                <div class="category-card" data-category="nargileler">
-                    <div class="category-image-placeholder nargileler">&#128168;</div>
-                    <div class="category-name">Nargileler</div>
-                </div>
-            </div>
+            <div class="categories-grid" id="categories-grid"></div>
         </div>
 
-        <div class="footer-info">
-            Powered by <a href="#">QR Menu</a>
-        </div>
     </div>
 
     <!-- Menü Sayfası -->
-    <div class="menu-page" id="menu-page">
-        <!-- Icecekler -->
-        <section class="menu-category" id="icecekler">
-            <div class="menu-category-header">
-                <span>&#9749;</span> Icecekler
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Turk Kahvesi</div>
-                    <div class="product-desc">Geleneksel usul pisirilmis</div>
-                    <div class="product-price">45,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Cay</div>
-                    <div class="product-desc">Demlik cay, ince belli bardak</div>
-                    <div class="product-price">25,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Limonata</div>
-                    <div class="product-desc">Taze sikma, ev yapimi</div>
-                    <div class="product-price">40,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Soguk Kahve</div>
-                    <div class="product-desc">Buzlu, sutlu</div>
-                    <div class="product-price">55,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Ayran</div>
-                    <div class="product-desc">Ev yapimi, kopu kopuk</div>
-                    <div class="product-price">30,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-        </section>
-
-        <!-- Yemekler -->
-        <section class="menu-category" id="yemekler">
-            <div class="menu-category-header">
-                <span>&#127869;</span> Yemekler
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Kofte</div>
-                    <div class="product-desc">Izgara kofte, pilav ve salata ile</div>
-                    <div class="product-price">120,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Tavuk Sis</div>
-                    <div class="product-desc">Marine edilmis, sebzeli</div>
-                    <div class="product-price">110,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Karisik Izgara</div>
-                    <div class="product-desc">Kofte, pirzola, tavuk, kanat</div>
-                    <div class="product-price">180,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Lahmacun</div>
-                    <div class="product-desc">Ince hamur, ozel harci ile</div>
-                    <div class="product-price">50,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Pide</div>
-                    <div class="product-desc">Kiymali veya kasarli</div>
-                    <div class="product-price">90,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-        </section>
-
-        <!-- Aperatifler -->
-        <section class="menu-category" id="aperatifler">
-            <div class="menu-category-header">
-                <span>&#127839;</span> Aperatifler
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Patates Kizartmasi</div>
-                    <div class="product-desc">Citir, ozel baharatli</div>
-                    <div class="product-price">55,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Sogan Halkasi</div>
-                    <div class="product-desc">Citir kaplamali, sos ile</div>
-                    <div class="product-price">50,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Meze Tabagi</div>
-                    <div class="product-desc">Humus, haydari, patlican ezme</div>
-                    <div class="product-price">90,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Sigara Boregi</div>
-                    <div class="product-desc">Peynirli, 6 adet</div>
-                    <div class="product-price">65,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Karisik Kizartma</div>
-                    <div class="product-desc">Kabak, patlican, biber</div>
-                    <div class="product-price">70,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-        </section>
-
-        <!-- Nargileler -->
-        <section class="menu-category" id="nargileler">
-            <div class="menu-category-header">
-                <span>&#128168;</span> Nargileler
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Meyve Aromali</div>
-                    <div class="product-desc">Elma, uzum, seftali secenekleri</div>
-                    <div class="product-price">150,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Nane</div>
-                    <div class="product-desc">Ferahlatici nane aromasi</div>
-                    <div class="product-price">140,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Klasik</div>
-                    <div class="product-desc">Geleneksel tutun aromasi</div>
-                    <div class="product-price">130,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Karisik Meyve</div>
-                    <div class="product-desc">Ozel meyve karisimi</div>
-                    <div class="product-price">160,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-            <div class="product-card">
-                <div class="product-info">
-                    <div class="product-name">Premium</div>
-                    <div class="product-desc">Ozel ithal tutun, ekstra kok</div>
-                    <div class="product-price">200,00 TL</div>
-                </div>
-                <div class="product-image-placeholder">Gorsel</div>
-            </div>
-        </section>
-
-        <div class="footer-info">
-            Powered by <a href="#">QR Menu</a>
-        </div>
-    </div>
+    <div class="menu-page" id="menu-page"></div>
 
     <!-- Search Modal -->
     <div class="search-modal" id="search-modal">
@@ -761,7 +567,7 @@
     </div>
 
     <!-- Bottom Navigation -->
-    <nav class="bottom-nav">
+    <nav class="bottom-nav" style="display: none;" id="bottom-nav">
         <button class="nav-item active" id="nav-menu" onclick="showHome()">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
@@ -787,60 +593,197 @@
     </nav>
 
     <script>
-        // Slider
+        let menuData = null;
+        let allProducts = [];
         let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
-        const totalSlides = slides.length;
+        let sliderInterval = null;
 
+        // Veri yukle
+        async function loadData() {
+            try {
+                const response = await fetch('icerik.json');
+                menuData = await response.json();
+
+                // Tum urunleri duz liste yap (arama icin)
+                menuData.kategoriler.forEach(kat => {
+                    kat.urunler.forEach(urun => {
+                        allProducts.push({
+                            ...urun,
+                            kategoriId: kat.id,
+                            kategoriIsim: kat.isim
+                        });
+                    });
+                });
+
+                renderPage();
+            } catch (error) {
+                console.error('Veri yuklenirken hata:', error);
+                document.getElementById('loading').innerHTML = 'Veri yuklenemedi!';
+            }
+        }
+
+        function renderPage() {
+            // Site bilgileri
+            document.getElementById('site-logo').textContent = menuData.site.logo;
+            document.getElementById('site-location').textContent = menuData.site.konum;
+
+            // Slider
+            renderSlider();
+
+            // Kategori kartlari
+            renderCategoryCards();
+
+            // Kategori tab'lari
+            renderCategoryTabs();
+
+            // Menu sayfasi
+            renderMenuPage();
+
+            // Loading gizle, sayfa goster
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('header').style.display = 'flex';
+            document.getElementById('home-page').style.display = 'block';
+            document.getElementById('bottom-nav').style.display = 'flex';
+
+            // Slider baslat
+            startSlider();
+        }
+
+        function renderSlider() {
+            const slider = document.getElementById('slider');
+            const dots = document.getElementById('slider-dots');
+
+            // Slider arka plan görselleri
+            const sliderImages = [
+                'image/yemekler/adana_porsiyon.jpg',
+                'image/tatlılar/profiterol.jpg',
+                'image/kahveler/sıcak kahveler/976-cafelatte.png'
+            ];
+
+            slider.innerHTML = menuData.slider.map((slide, i) => `
+                <div class="slide">
+                    <div class="slide-content" style="background: linear-gradient(135deg, ${slide.renk} 0%, ${adjustColor(slide.renk, 40)} 100%);">
+                        <div class="slide-bg" style="background-image: url('${sliderImages[i]}');"></div>
+                        <div class="slide-content-text">
+                            <div class="slide-title">${slide.baslik}</div>
+                            <div class="slide-subtitle">${slide.altBaslik}</div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            dots.innerHTML = menuData.slider.map((_, i) => `
+                <div class="dot ${i === 0 ? 'active' : ''}" data-slide="${i}"></div>
+            `).join('');
+
+            // Dot tiklama
+            dots.querySelectorAll('.dot').forEach(dot => {
+                dot.addEventListener('click', () => {
+                    goToSlide(parseInt(dot.dataset.slide));
+                });
+            });
+        }
+
+        function renderCategoryCards() {
+            const grid = document.getElementById('categories-grid');
+
+            // Her kategori için temsili görsel
+            const categoryImages = {
+                'yemekler': 'image/yemekler/adana_porsiyon.jpg',
+                'aperatifler': 'image/aperatifler/tavukburger.jpg',
+                'makarnalar': 'image/makarnalar/fettuccinealfredo.jpg',
+                'kahveler': 'image/kahveler/sıcak kahveler/976-cafelatte.png',
+                'icecekler': 'image/Icecekler/soguk içecekler/435-icelatte.jpg',
+                'tatlilar': 'image/tatlılar/profiterol.jpg',
+                'nargileler': 'image/nargileler/nargile_aromalılar.jpg'
+            };
+
+            grid.innerHTML = menuData.kategoriler.map(kat => `
+                <div class="category-card" data-category="${kat.id}">
+                    <div class="category-image">
+                        <img src="${categoryImages[kat.id]}" alt="${kat.isim}">
+                    </div>
+                    <div class="category-name">${kat.icon} ${kat.isim}</div>
+                </div>
+            `).join('');
+
+            // Kart tiklama
+            grid.querySelectorAll('.category-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    showMenuPage(card.dataset.category);
+                });
+            });
+        }
+
+        function renderCategoryTabs() {
+            const tabs = document.getElementById('category-tabs');
+
+            tabs.innerHTML = menuData.kategoriler.map((kat, i) => `
+                <button class="category-tab ${i === 0 ? 'active' : ''}" data-target="${kat.id}">${kat.isim}</button>
+            `).join('');
+
+            // Tab tiklama
+            tabs.querySelectorAll('.category-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    scrollToCategory(tab.dataset.target);
+                });
+            });
+        }
+
+        function renderMenuPage() {
+            const menuPage = document.getElementById('menu-page');
+
+            menuPage.innerHTML = menuData.kategoriler.map(kat => `
+                <section class="menu-category" id="${kat.id}">
+                    <div class="menu-category-header">
+                        <span>${kat.icon}</span> ${kat.isim}
+                    </div>
+                    ${kat.urunler.map(urun => `
+                        <div class="product-card">
+                            <div class="product-info">
+                                <div class="product-name">${urun.isim}</div>
+                                <div class="product-desc">${urun.aciklama}</div>
+                                <div class="product-price">${urun.fiyat}</div>
+                            </div>
+                            ${urun.gorsel
+                                ? `<img class="product-image" src="${urun.gorsel}" alt="${urun.isim}">`
+                                : `<div class="product-image-placeholder">Gorsel</div>`
+                            }
+                        </div>
+                    `).join('')}
+                </section>
+            `).join('') + `
+                <div class="footer-info">
+                    Powered by <a href="#">QR Menu</a>
+                </div>
+            `;
+        }
+
+        // Slider fonksiyonlari
         function goToSlide(index) {
             currentSlide = index;
             document.getElementById('slider').style.transform = `translateX(-${currentSlide * 100}%)`;
-            dots.forEach((dot, i) => {
+            document.querySelectorAll('.dot').forEach((dot, i) => {
                 dot.classList.toggle('active', i === currentSlide);
             });
         }
 
         function nextSlide() {
-            currentSlide = (currentSlide + 1) % totalSlides;
+            currentSlide = (currentSlide + 1) % menuData.slider.length;
             goToSlide(currentSlide);
         }
 
-        // Otomatik slider
-        let sliderInterval = setInterval(nextSlide, 4000);
+        function startSlider() {
+            sliderInterval = setInterval(nextSlide, 4000);
+        }
 
-        // Dot tiklama
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                goToSlide(parseInt(dot.dataset.slide));
-            });
-        });
-
-        // Kategori kartlari
-        const categoryCards = document.querySelectorAll('.category-card');
-        categoryCards.forEach(card => {
-            card.addEventListener('click', () => {
-                const category = card.dataset.category;
-                showMenuPage(category);
-            });
-        });
-
-        // Kategori tab'lari
-        const categoryTabs = document.querySelectorAll('.category-tab');
-        categoryTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const target = tab.dataset.target;
-                scrollToCategory(target);
-            });
-        });
-
+        // Sayfa gecisleri
         function showMenuPage(category) {
             document.getElementById('home-page').style.display = 'none';
             document.getElementById('menu-page').classList.add('active');
             document.getElementById('category-nav').classList.add('visible');
             document.getElementById('back-btn').classList.add('visible');
 
-            // Scroll to category
             setTimeout(() => {
                 scrollToCategory(category);
             }, 100);
@@ -855,11 +798,10 @@
         }
 
         function updateActiveTab(category) {
-            categoryTabs.forEach(tab => {
+            document.querySelectorAll('.category-tab').forEach(tab => {
                 tab.classList.toggle('active', tab.dataset.target === category);
             });
 
-            // Tab'i gorunur alana kaydir
             const activeTab = document.querySelector(`.category-tab[data-target="${category}"]`);
             if (activeTab) {
                 activeTab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
@@ -875,14 +817,12 @@
             window.scrollTo(0, 0);
         }
 
-        // Scroll sirasinda aktif kategoriyi guncelle
-        const menuCategories = document.querySelectorAll('.menu-category');
-
+        // Scroll dinleyici
         window.addEventListener('scroll', () => {
             if (!document.getElementById('menu-page').classList.contains('active')) return;
 
             let currentCategory = '';
-            menuCategories.forEach(category => {
+            document.querySelectorAll('.menu-category').forEach(category => {
                 const rect = category.getBoundingClientRect();
                 if (rect.top <= 150) {
                     currentCategory = category.id;
@@ -895,29 +835,6 @@
         });
 
         // Arama
-        const allProducts = [
-            { name: 'Turk Kahvesi', desc: 'Geleneksel usul pisirilmis', price: '45,00 TL', category: 'icecekler' },
-            { name: 'Cay', desc: 'Demlik cay, ince belli bardak', price: '25,00 TL', category: 'icecekler' },
-            { name: 'Limonata', desc: 'Taze sikma, ev yapimi', price: '40,00 TL', category: 'icecekler' },
-            { name: 'Soguk Kahve', desc: 'Buzlu, sutlu', price: '55,00 TL', category: 'icecekler' },
-            { name: 'Ayran', desc: 'Ev yapimi, kopu kopuk', price: '30,00 TL', category: 'icecekler' },
-            { name: 'Kofte', desc: 'Izgara kofte, pilav ve salata ile', price: '120,00 TL', category: 'yemekler' },
-            { name: 'Tavuk Sis', desc: 'Marine edilmis, sebzeli', price: '110,00 TL', category: 'yemekler' },
-            { name: 'Karisik Izgara', desc: 'Kofte, pirzola, tavuk, kanat', price: '180,00 TL', category: 'yemekler' },
-            { name: 'Lahmacun', desc: 'Ince hamur, ozel harci ile', price: '50,00 TL', category: 'yemekler' },
-            { name: 'Pide', desc: 'Kiymali veya kasarli', price: '90,00 TL', category: 'yemekler' },
-            { name: 'Patates Kizartmasi', desc: 'Citir, ozel baharatli', price: '55,00 TL', category: 'aperatifler' },
-            { name: 'Sogan Halkasi', desc: 'Citir kaplamali, sos ile', price: '50,00 TL', category: 'aperatifler' },
-            { name: 'Meze Tabagi', desc: 'Humus, haydari, patlican ezme', price: '90,00 TL', category: 'aperatifler' },
-            { name: 'Sigara Boregi', desc: 'Peynirli, 6 adet', price: '65,00 TL', category: 'aperatifler' },
-            { name: 'Karisik Kizartma', desc: 'Kabak, patlican, biber', price: '70,00 TL', category: 'aperatifler' },
-            { name: 'Meyve Aromali', desc: 'Elma, uzum, seftali secenekleri', price: '150,00 TL', category: 'nargileler' },
-            { name: 'Nane', desc: 'Ferahlatici nane aromasi', price: '140,00 TL', category: 'nargileler' },
-            { name: 'Klasik', desc: 'Geleneksel tutun aromasi', price: '130,00 TL', category: 'nargileler' },
-            { name: 'Karisik Meyve', desc: 'Ozel meyve karisimi', price: '160,00 TL', category: 'nargileler' },
-            { name: 'Premium', desc: 'Ozel ithal tutun, ekstra kok', price: '200,00 TL', category: 'nargileler' }
-        ];
-
         function openSearch() {
             document.getElementById('search-modal').classList.add('active');
             document.getElementById('search-input').focus();
@@ -939,18 +856,21 @@
             }
 
             const filtered = allProducts.filter(p =>
-                p.name.toLowerCase().includes(query) ||
-                p.desc.toLowerCase().includes(query)
+                p.isim.toLowerCase().includes(query) ||
+                p.aciklama.toLowerCase().includes(query)
             );
 
             results.innerHTML = filtered.map(p => `
-                <div class="product-card" onclick="goToProduct('${p.category}')">
+                <div class="product-card" onclick="goToProduct('${p.kategoriId}')">
                     <div class="product-info">
-                        <div class="product-name">${p.name}</div>
-                        <div class="product-desc">${p.desc}</div>
-                        <div class="product-price">${p.price}</div>
+                        <div class="product-name">${p.isim}</div>
+                        <div class="product-desc">${p.aciklama}</div>
+                        <div class="product-price">${p.fiyat}</div>
                     </div>
-                    <div class="product-image-placeholder">Gorsel</div>
+                    ${p.gorsel
+                        ? `<img class="product-image" src="${p.gorsel}" alt="${p.isim}">`
+                        : `<div class="product-image-placeholder">Gorsel</div>`
+                    }
                 </div>
             `).join('');
         }
@@ -963,6 +883,22 @@
         function toggleLanguage() {
             alert('Dil secenegi yakinda eklenecek!');
         }
+
+        // Renk ayarlama yardimci fonksiyonu
+        function adjustColor(hex, amount) {
+            let r = parseInt(hex.slice(1, 3), 16);
+            let g = parseInt(hex.slice(3, 5), 16);
+            let b = parseInt(hex.slice(5, 7), 16);
+
+            r = Math.min(255, r + amount);
+            g = Math.min(255, g + amount);
+            b = Math.min(255, b + amount);
+
+            return `rgb(${r}, ${g}, ${b})`;
+        }
+
+        // Sayfa yuklendiginde veri cek
+        document.addEventListener('DOMContentLoaded', loadData);
     </script>
 </body>
 </html>

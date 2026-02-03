@@ -1,0 +1,417 @@
+{
+  "site": {
+    "logo": "MENU",
+    "konum": "Fatih Kafe M"
+  },
+  "slider": [
+    {
+      "baslik": "Lezzette, Keyifte",
+      "altBaslik": "En taze lezzetler sizlerle",
+      "renk": "#C75B39"
+    },
+    {
+      "baslik": "Taze & Dogal",
+      "altBaslik": "Gunluk taze malzemeler",
+      "renk": "#2C5F2D"
+    },
+    {
+      "baslik": "Ozel Lezzetler",
+      "altBaslik": "Sizin icin hazirladik",
+      "renk": "#1E3A5F"
+    }
+  ],
+  "kategoriler": [
+    {
+      "id": "yemekler",
+      "isim": "Yemekler",
+      "icon": "🍽️",
+      "renk": "#C75B39",
+      "urunler": [
+        {
+          "isim": "Mercimek Corbasi",
+          "aciklama": "Geleneksel mercimek corbasi",
+          "fiyat": "50,00 TL",
+          "gorsel": "image/yemekler/mercimek-corba.jpg"
+        },
+        {
+          "isim": "Adana Kebap Porsiyon",
+          "aciklama": "Pilav, salata ile servis edilir",
+          "fiyat": "180,00 TL",
+          "gorsel": "image/yemekler/adana_porsiyon.jpg"
+        },
+        {
+          "isim": "Adana Durum",
+          "aciklama": "Lavas ekmeğinde adana kebap",
+          "fiyat": "120,00 TL",
+          "gorsel": "image/yemekler/adanadurum.jpg"
+        },
+        {
+          "isim": "Urfa Kebap Porsiyon",
+          "aciklama": "Pilav, salata ile servis edilir",
+          "fiyat": "180,00 TL",
+          "gorsel": "image/yemekler/urfa-kebap-porsiyon.jpg"
+        },
+        {
+          "isim": "Kofte Porsiyon",
+          "aciklama": "Izgara kofte, pilav ve salata ile",
+          "fiyat": "150,00 TL",
+          "gorsel": "image/yemekler/porsiyon köfte.jpg"
+        },
+        {
+          "isim": "Ekmek Arasi Kofte",
+          "aciklama": "Taze ekmekte izgara kofte",
+          "fiyat": "90,00 TL",
+          "gorsel": "image/yemekler/ekmek_arası_kofte.jpg"
+        },
+        {
+          "isim": "Tavuk Sis Porsiyon",
+          "aciklama": "Marine edilmis tavuk sis, pilav ve salata ile",
+          "fiyat": "140,00 TL",
+          "gorsel": "image/yemekler/tavuk_sis_porsiyon.jpg"
+        },
+        {
+          "isim": "Tavuk Sis Durum",
+          "aciklama": "Lavas ekmeğinde tavuk sis",
+          "fiyat": "100,00 TL",
+          "gorsel": "image/yemekler/tavuksisdurum.jpg"
+        }
+      ]
+    },
+    {
+      "id": "aperatifler",
+      "isim": "Aperatifler",
+      "icon": "🍟",
+      "renk": "#2C5F2D",
+      "urunler": [
+        {
+          "isim": "Patates Kizartmasi",
+          "aciklama": "Citir patates kizartmasi",
+          "fiyat": "55,00 TL",
+          "gorsel": "image/aperatifler/patateskizartmasi.png"
+        },
+        {
+          "isim": "Sogan Halkasi",
+          "aciklama": "Citir kaplamali sogan halkasi",
+          "fiyat": "60,00 TL",
+          "gorsel": "image/aperatifler/soğan halkası.jpg"
+        },
+        {
+          "isim": "Tavuk Sepeti",
+          "aciklama": "Citir tavuk parçalari sepette",
+          "fiyat": "120,00 TL",
+          "gorsel": "image/aperatifler/tavuk_sepeti.jpg"
+        },
+        {
+          "isim": "Tavuk Burger",
+          "aciklama": "Izgara tavuk burger, patates ile",
+          "fiyat": "110,00 TL",
+          "gorsel": "image/aperatifler/tavukburger.jpg"
+        },
+        {
+          "isim": "Sosisli Patates",
+          "aciklama": "Sosis ve patates kizartmasi",
+          "fiyat": "80,00 TL",
+          "gorsel": "image/aperatifler/sosispatates.jpg"
+        },
+        {
+          "isim": "Karisik Atistirmalik",
+          "aciklama": "Karisik citir lezzetler",
+          "fiyat": "95,00 TL",
+          "gorsel": "image/aperatifler/karisikatıştırmalık.jpeg"
+        },
+        {
+          "isim": "Fajita - Etli",
+          "aciklama": "Meksika usulu etli fajita",
+          "fiyat": "130,00 TL",
+          "gorsel": "image/aperatifler/fajita-etli.jpg"
+        },
+        {
+          "isim": "Izgara Tavuk Dilimleri",
+          "aciklama": "Marine edilmis izgara tavuk",
+          "fiyat": "115,00 TL",
+          "gorsel": "image/aperatifler/izgaratavukdilimleri.jpg"
+        },
+        {
+          "isim": "Kori Soslu Tavuk",
+          "aciklama": "Ozel kori soslu tavuk",
+          "fiyat": "125,00 TL",
+          "gorsel": "image/aperatifler/korisoslutavuk.jpg"
+        },
+        {
+          "isim": "Dana Etli Noodle",
+          "aciklama": "Wok usulu dana etli noodle",
+          "fiyat": "140,00 TL",
+          "gorsel": "image/aperatifler/danaetlinoodle.jpg"
+        },
+        {
+          "isim": "But Izgara Kulbasti",
+          "aciklama": "Izgara kulbasti but",
+          "fiyat": "160,00 TL",
+          "gorsel": "image/aperatifler/butizgarakulbasti.jpg"
+        }
+      ]
+    },
+    {
+      "id": "makarnalar",
+      "isim": "Makarnalar",
+      "icon": "🍝",
+      "renk": "#D4A373",
+      "urunler": [
+        {
+          "isim": "Fettuccine Alfredo",
+          "aciklama": "Kremali alfredo soslu makarna",
+          "fiyat": "95,00 TL",
+          "gorsel": "image/makarnalar/fettuccinealfredo.jpg"
+        },
+        {
+          "isim": "Spaghetti Napolitan",
+          "aciklama": "Domates soslu spagetti",
+          "fiyat": "90,00 TL",
+          "gorsel": "image/makarnalar/spagettinapolitan.jpg"
+        }
+      ]
+    },
+    {
+      "id": "kahveler",
+      "isim": "Kahveler",
+      "icon": "☕",
+      "renk": "#6F4E37",
+      "urunler": [
+        {
+          "isim": "Turk Kahvesi",
+          "aciklama": "Geleneksel turk kahvesi",
+          "fiyat": "45,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/turkkahvesi.png"
+        },
+        {
+          "isim": "Espresso",
+          "aciklama": "Tek shot espresso",
+          "fiyat": "40,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/461-singleespresso.jpg"
+        },
+        {
+          "isim": "Americano",
+          "aciklama": "Filtre kahve tadi",
+          "fiyat": "50,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/126-americano2.png"
+        },
+        {
+          "isim": "Cafe Latte",
+          "aciklama": "Sutlu espresso",
+          "fiyat": "60,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/976-cafelatte.png"
+        },
+        {
+          "isim": "Espresso Macchiato",
+          "aciklama": "Espresso, sutlu kopuk ile",
+          "fiyat": "55,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/908-espressomacchiato.jpg"
+        },
+        {
+          "isim": "White Chocolate Mocha",
+          "aciklama": "Beyaz cikolatali mocha",
+          "fiyat": "70,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/138-whitechocolatemocha.jpg"
+        },
+        {
+          "isim": "Nescafe Sade",
+          "aciklama": "Sade nescafe",
+          "fiyat": "35,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/855-nescafesade.jpg"
+        },
+        {
+          "isim": "Nescafe Sutlu",
+          "aciklama": "Sutlu nescafe",
+          "fiyat": "40,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/358-nescafesutlu.jpg"
+        },
+        {
+          "isim": "Ice Latte",
+          "aciklama": "Buzlu sutlu espresso",
+          "fiyat": "65,00 TL",
+          "gorsel": "image/kahveler/soğuk kahveler/435-icelatte.jpg"
+        },
+        {
+          "isim": "Ice Americano",
+          "aciklama": "Buzlu americano",
+          "fiyat": "55,00 TL",
+          "gorsel": "image/kahveler/soğuk kahveler/788-iceamericano.jpg"
+        },
+        {
+          "isim": "Ice Caramel Macchiato",
+          "aciklama": "Buzlu karamelli macchiato",
+          "fiyat": "70,00 TL",
+          "gorsel": "image/kahveler/soğuk kahveler/981-icecaramelmacchiato.jpg"
+        }
+      ]
+    },
+    {
+      "id": "icecekler",
+      "isim": "Icecekler",
+      "icon": "🥤",
+      "renk": "#4A90E2",
+      "urunler": [
+        {
+          "isim": "Cay",
+          "aciklama": "Demlik cay",
+          "fiyat": "20,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/cay.jpg"
+        },
+        {
+          "isim": "Fincan Cay",
+          "aciklama": "Poset cay",
+          "fiyat": "15,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/fincancay.png"
+        },
+        {
+          "isim": "Bitki Caylari",
+          "aciklama": "Cesitli bitki caylari",
+          "fiyat": "30,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/bitkicaylari.jpg"
+        },
+        {
+          "isim": "Sahlep",
+          "aciklama": "Geleneksel sicak sahlep",
+          "fiyat": "45,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/sahlep.png"
+        },
+        {
+          "isim": "Mihrima Sultan Sutlu",
+          "aciklama": "Ozel tarifle hazirlanmis",
+          "fiyat": "50,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/mihrimasultansutlu.png"
+        },
+        {
+          "isim": "Kola",
+          "aciklama": "Coca Cola 330ml",
+          "fiyat": "35,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/kola.jpg"
+        },
+        {
+          "isim": "Fanta",
+          "aciklama": "Fanta 330ml",
+          "fiyat": "35,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/fanta.jpg"
+        },
+        {
+          "isim": "Sprite",
+          "aciklama": "Sprite 330ml",
+          "fiyat": "35,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/sprite.jpg"
+        },
+        {
+          "isim": "Churchill",
+          "aciklama": "Churchill 330ml",
+          "fiyat": "40,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/churchill.jpg"
+        },
+        {
+          "isim": "Red Bull",
+          "aciklama": "Red Bull enerji icecegi 250ml",
+          "fiyat": "60,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/redbul.jpg"
+        },
+        {
+          "isim": "Ayran Soda",
+          "aciklama": "Meyveli ayran soda",
+          "fiyat": "40,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/ayransoda.jpg"
+        },
+        {
+          "isim": "Meyveli Soda",
+          "aciklama": "Cesitli meyve aromali soda",
+          "fiyat": "35,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/meyvelisoda.jpg"
+        },
+        {
+          "isim": "Seftali Suyu",
+          "aciklama": "Dogal seftali suyu",
+          "fiyat": "40,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/şeftalisuyu.webp"
+        },
+        {
+          "isim": "Visne Suyu",
+          "aciklama": "Dogal visne suyu",
+          "fiyat": "40,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/meysu-meyve-visne-200.jpg"
+        },
+        {
+          "isim": "Su",
+          "aciklama": "500ml pet sise",
+          "fiyat": "10,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/su.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "tatlilar",
+      "isim": "Tatlilar",
+      "icon": "🍰",
+      "renk": "#E91E63",
+      "urunler": [
+        {
+          "isim": "Trilece",
+          "aciklama": "Sutlu trilece tatlisi",
+          "fiyat": "75,00 TL",
+          "gorsel": "image/tatlılar/trilece.jpg"
+        },
+        {
+          "isim": "Profiterol",
+          "aciklama": "Cikolatali profiterol",
+          "fiyat": "80,00 TL",
+          "gorsel": "image/tatlılar/profiterol.jpg"
+        },
+        {
+          "isim": "Firin Sutlac",
+          "aciklama": "Geleneksel firin sutlac",
+          "fiyat": "65,00 TL",
+          "gorsel": "image/tatlılar/firinsutlac.jpg"
+        },
+        {
+          "isim": "Kazandibi",
+          "aciklama": "Ozel tarifle kazandibi",
+          "fiyat": "70,00 TL",
+          "gorsel": "image/tatlılar/kazandibi.jpg"
+        },
+        {
+          "isim": "Tavuk Gogsu",
+          "aciklama": "Geleneksel tavuk gogsu",
+          "fiyat": "70,00 TL",
+          "gorsel": "image/tatlılar/tavukgogsu.jpg"
+        },
+        {
+          "isim": "Keskul",
+          "aciklama": "Hindistan cevizli keskul",
+          "fiyat": "65,00 TL",
+          "gorsel": "image/tatlılar/keskul.jpg"
+        },
+        {
+          "isim": "Meyve Tabagi",
+          "aciklama": "Taze mevsim meyveleri",
+          "fiyat": "85,00 TL",
+          "gorsel": "image/tatlılar/meyve.jpg"
+        }
+      ]
+    },
+    {
+      "id": "nargileler",
+      "isim": "Nargileler",
+      "icon": "💨",
+      "renk": "#1E3A5F",
+      "urunler": [
+        {
+          "isim": "Aromali Nargile",
+          "aciklama": "Cesitli aromalar (Elma, Uzum, Seftali, Kavun, Karpuz)",
+          "fiyat": "150,00 TL",
+          "gorsel": "image/nargileler/nargile_aromalılar.jpg"
+        },
+        {
+          "isim": "Tombeki Nargile",
+          "aciklama": "Geleneksel tombeki nargile",
+          "fiyat": "180,00 TL",
+          "gorsel": "image/nargileler/tömbeki_nargile.jpg"
+        }
+      ]
+    }
+  ]
+}

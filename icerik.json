@@ -410,13 +410,13 @@
         {
           "isim": "Aromali Nargile",
           "aciklama": "Cesitli aromalar (Elma, Uzum, Seftali, Kavun, Karpuz)",
-          "fiyat": "150,00 TL",
+          "fiyat": "350,00 TL",
           "gorsel": "image/nargileler/nargile_aromalılar.jpg"
         },
         {
           "isim": "Tombeki Nargile",
           "aciklama": "Geleneksel tombeki nargile",
-          "fiyat": "180,00 TL",
+          "fiyat": "350,00 TL",
           "gorsel": "image/nargileler/tömbeki_nargile.jpg"
         }
       ]
@@ -429,8 +429,8 @@
       "urunler": [
         {
           "isim": "Masa Sarji Hizmeti",
-          "aciklama": "Masanizda telefon sarj imkani",
-          "fiyat": "Ucretsiz",
+          "aciklama": "Masanizda telefon sarj imkani, her jeton 30 dakika sürer",
+          "fiyat": "30,00 TL",
           "gorsel": "image/masa şarjı/masaşarjı.jpeg"
         }
       ]

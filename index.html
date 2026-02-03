@@ -169,7 +169,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
             color: white;
             text-align: center;
             padding: 20px;
@@ -181,12 +181,22 @@
             inset: 0;
             background-size: cover;
             background-position: center;
-            opacity: 0.3;
+            opacity: 1;
+        }
+
+        .slide-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%);
         }
 
         .slide-content-text {
             position: relative;
-            z-index: 1;
+            z-index: 2;
+            background: rgba(0,0,0,0.3);
+            padding: 15px 20px;
+            border-radius: 12px;
+            backdrop-filter: blur(5px);
         }
 
         .slide-title {
@@ -432,6 +442,96 @@
             font-weight: 500;
         }
 
+        /* Product Detail Modal */
+        .product-detail-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 300;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product-detail-modal.active {
+            display: flex;
+        }
+
+        .product-detail-content {
+            background: white;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .product-detail-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .product-detail-image-placeholder {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 2rem;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .product-detail-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: white;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .product-detail-info {
+            padding: 25px;
+        }
+
+        .product-detail-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-detail-desc {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .product-detail-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #C75B39;
+        }
+
         /* Search Modal */
         .search-modal {
             display: none;
@@ -557,6 +657,14 @@
     <!-- Menü Sayfası -->
     <div class="menu-page" id="menu-page"></div>
 
+    <!-- Product Detail Modal -->
+    <div class="product-detail-modal" id="product-detail-modal" onclick="closeProductDetail(event)">
+        <div class="product-detail-content" onclick="event.stopPropagation()">
+            <button class="product-detail-close" onclick="closeProductDetail()">&times;</button>
+            <div id="product-detail-body"></div>
+        </div>
+    </div>
+
     <!-- Search Modal -->
     <div class="search-modal" id="search-modal">
         <div class="search-header">
@@ -662,8 +770,9 @@
 
             slider.innerHTML = menuData.slider.map((slide, i) => `
                 <div class="slide">
-                    <div class="slide-content" style="background: linear-gradient(135deg, ${slide.renk} 0%, ${adjustColor(slide.renk, 40)} 100%);">
+                    <div class="slide-content">
                         <div class="slide-bg" style="background-image: url('${sliderImages[i]}');"></div>
+                        <div class="slide-overlay"></div>
                         <div class="slide-content-text">
                             <div class="slide-title">${slide.baslik}</div>
                             <div class="slide-subtitle">${slide.altBaslik}</div>
@@ -693,9 +802,11 @@
                 'aperatifler': 'image/aperatifler/tavukburger.jpg',
                 'makarnalar': 'image/makarnalar/fettuccinealfredo.jpg',
                 'kahveler': 'image/kahveler/sıcak kahveler/976-cafelatte.png',
-                'icecekler': 'image/Icecekler/soguk içecekler/435-icelatte.jpg',
+                'sicak-icecekler': 'image/Icecekler/sıcak içecekler/cay.jpg',
+                'soguk-icecekler': 'image/Icecekler/soguk içecekler/kola.jpg',
                 'tatlilar': 'image/tatlılar/profiterol.jpg',
-                'nargileler': 'image/nargileler/nargile_aromalılar.jpg'
+                'nargileler': 'image/nargileler/nargile_aromalılar.jpg',
+                'masa-sarji': 'image/masa şarjı/masaşarjı.jpeg'
             };
 
             grid.innerHTML = menuData.kategoriler.map(kat => `
@@ -738,8 +849,8 @@
                     <div class="menu-category-header">
                         <span>${kat.icon}</span> ${kat.isim}
                     </div>
-                    ${kat.urunler.map(urun => `
-                        <div class="product-card">
+                    ${kat.urunler.map((urun, idx) => `
+                        <div class="product-card" onclick='openProductDetail(${JSON.stringify(urun).replace(/'/g, "&#39;")})'>
                             <div class="product-info">
                                 <div class="product-name">${urun.isim}</div>
                                 <div class="product-desc">${urun.aciklama}</div>
@@ -861,7 +972,7 @@
             );
 
             results.innerHTML = filtered.map(p => `
-                <div class="product-card" onclick="goToProduct('${p.kategoriId}')">
+                <div class="product-card" onclick='openProductDetail(${JSON.stringify(p).replace(/'/g, "&#39;")})'>
                     <div class="product-info">
                         <div class="product-name">${p.isim}</div>
                         <div class="product-desc">${p.aciklama}</div>
@@ -882,6 +993,35 @@
 
         function toggleLanguage() {
             alert('Dil secenegi yakinda eklenecek!');
+        }
+
+        // Urun detay modal
+        function openProductDetail(product) {
+            const modal = document.getElementById('product-detail-modal');
+            const body = document.getElementById('product-detail-body');
+
+            body.innerHTML = `
+                ${product.gorsel
+                    ? `<img class="product-detail-image" src="${product.gorsel}" alt="${product.isim}">`
+                    : `<div class="product-detail-image-placeholder">Görsel Yok</div>`
+                }
+                <div class="product-detail-info">
+                    <div class="product-detail-name">${product.isim}</div>
+                    <div class="product-detail-desc">${product.aciklama}</div>
+                    <div class="product-detail-price">${product.fiyat}</div>
+                </div>
+            `;
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProductDetail(event) {
+            if (event && event.target !== event.currentTarget) return;
+
+            const modal = document.getElementById('product-detail-modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
         }
 
         // Renk ayarlama yardimci fonksiyonu

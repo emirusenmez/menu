@@ -246,10 +246,10 @@
       ]
     },
     {
-      "id": "icecekler",
-      "isim": "Icecekler",
-      "icon": "🥤",
-      "renk": "#4A90E2",
+      "id": "sicak-icecekler",
+      "isim": "Sicak Icecekler",
+      "icon": "☕",
+      "renk": "#D4735A",
       "urunler": [
         {
           "isim": "Cay",
@@ -280,7 +280,15 @@
           "aciklama": "Ozel tarifle hazirlanmis",
           "fiyat": "50,00 TL",
           "gorsel": "image/Icecekler/sıcak içecekler/mihrimasultansutlu.png"
-        },
+        }
+      ]
+    },
+    {
+      "id": "soguk-icecekler",
+      "isim": "Soguk Icecekler",
+      "icon": "🥤",
+      "renk": "#4A90E2",
+      "urunler": [
         {
           "isim": "Kola",
           "aciklama": "Coca Cola 330ml",
@@ -410,6 +418,20 @@
           "aciklama": "Geleneksel tombeki nargile",
           "fiyat": "180,00 TL",
           "gorsel": "image/nargileler/tömbeki_nargile.jpg"
+        }
+      ]
+    },
+    {
+      "id": "masa-sarji",
+      "isim": "Masa Sarji",
+      "icon": "🔌",
+      "renk": "#FF6B35",
+      "urunler": [
+        {
+          "isim": "Masa Sarji Hizmeti",
+          "aciklama": "Masanizda telefon sarj imkani",
+          "fiyat": "Ucretsiz",
+          "gorsel": "image/masa şarjı/masaşarjı.jpeg"
         }
       ]
     }

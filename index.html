@@ -48,7 +48,7 @@
         /* Header */
         header {
             background: linear-gradient(135deg, #C75B39, #D4735A);
-            padding: 15px 20px;
+            padding: 6px 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -60,7 +60,9 @@
         .header-left {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 5px;
+            flex: 1;
+            justify-content: left;
         }
 
         .back-btn {
@@ -81,32 +83,26 @@
             height: 24px;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: white;
-            letter-spacing: 1px;
-        }
-
-        .location {
-            color: white;
-            font-size: 0.9rem;
-            font-weight: 500;
+        .header-logo {
+            height: 80px;
+            width: auto;
+            object-fit: contain;
         }
 
         .header-right {
-            display: flex;
-            gap: 8px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
         }
 
         .lang-btn {
             background: rgba(255, 255, 255, 0.2);
             border: 2px solid rgba(255, 255, 255, 0.3);
             color: white;
-            padding: 6px 12px;
-            border-radius: 8px;
+            padding: 4px 10px;
+            border-radius: 6px;
             cursor: pointer;
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             font-weight: 600;
             transition: all 0.3s ease;
         }
@@ -681,16 +677,12 @@
                     <path d="M19 12H5M12 19l-7-7 7-7"/>
                 </svg>
             </button>
-            <div>
-                <div class="logo" id="site-logo">MENU</div>
-                <div class="location" id="site-location">Konum</div>
-            </div>
+            <img src="image/logoKafeM.png" alt="Kafe M Logo" class="header-logo">
         </div>
         <div class="header-right">
             <button class="lang-btn active" data-lang="tr" onclick="changeLanguage('tr')">TR</button>
             <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
             <button class="lang-btn" data-lang="es" onclick="changeLanguage('es')">ES</button>
-            <button class="lang-btn" data-lang="de" onclick="changeLanguage('de')">DE</button>
             <button class="lang-btn" data-lang="ar" onclick="changeLanguage('ar')">AR</button>
         </div>
     </header>
@@ -710,7 +702,6 @@
 
         <!-- Kategoriler -->
         <div class="categories-section">
-            <h2 class="section-title">Kategoriler</h2>
             <div class="categories-grid" id="categories-grid"></div>
         </div>
 
@@ -768,7 +759,7 @@
         let currentSlide = 0;
         let sliderInterval = null;
         let currentLang = localStorage.getItem('menuLang') || 'tr';
-        const languages = ['tr', 'en', 'es', 'de', 'ar'];
+        const languages = ['tr', 'en', 'es', 'ar'];
         const uiTranslations = {
             tr: { menu: 'Menu', search: 'Urun Ara', searchPlaceholder: 'Urun Ara...' },
             en: { menu: 'Menu', search: 'Search', searchPlaceholder: 'Search...' },
@@ -848,10 +839,6 @@
         function renderPage() {
             // Dil ayarlarini uygula
             initLanguage();
-
-            // Site bilgileri
-            document.getElementById('site-logo').textContent = menuData.site[currentLang].logo;
-            document.getElementById('site-location').textContent = menuData.site[currentLang].konum;
 
             // Slider
             renderSlider();

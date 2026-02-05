@@ -121,7 +121,7 @@
             "de": "Toast mit Sucuk-Wurst"
           },
           "fiyat": "150,00 TL",
-          "gorsel": "image/tostlar/kaşarlıtost.png"
+          "gorsel": "image/tostlar/susucklukaşarlıtost.jpeg"
         },
         {
           "isim": {
@@ -139,7 +139,7 @@
             "de": "Toast mit gebratenem Fleisch"
           },
           "fiyat": "150,00 TL",
-          "gorsel": "image/tostlar/kaşarlıtost.png"
+          "gorsel": "image/tostlar/kavurmalıtost.jpeg"
         },
         {
           "isim": {
@@ -175,7 +175,7 @@
             "de": "Toast mit gebratenem Fleisch und Käse"
           },
           "fiyat": "220,00 TL",
-          "gorsel": "image/tostlar/kaşarlıtost.png"
+          "gorsel": "image/tostlar/kavurmalıtost.jpeg"
         }
       ]
     },
@@ -352,6 +352,24 @@
           },
           "fiyat": "200,00 TL",
           "gorsel": "image/yemekler/tavuksisdurum.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Piyaz",
+            "en": "White Bean Salad",
+            "ar": "سلطة الفاصوليا البيضاء",
+            "es": "Ensalada de Alubias",
+            "de": "Weiße Bohnen Salat"
+          },
+          "aciklama": {
+            "tr": "Geleneksel piyaz salatasi",
+            "en": "Traditional white bean salad",
+            "ar": "سلطة الفاصوليا البيضاء التقليدية",
+            "es": "Ensalada tradicional de alubias blancas",
+            "de": "Traditioneller weißer Bohnensalat"
+          },
+          "fiyat": "200,00 TL",
+          "gorsel": "image/yemekler/piyaz.png"
         }
       ]
     },

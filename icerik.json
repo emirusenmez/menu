@@ -120,7 +120,7 @@
             "es": "Tostado con salchicha sujuk",
             "de": "Toast mit Sucuk-Wurst"
           },
-          "fiyat": "150,00 TL",
+          "fiyat": "140,00 TL",
           "gorsel": "image/tostlar/sucuklutost.png"
         },
         {
@@ -156,7 +156,7 @@
             "es": "Tostado con sujuk y queso kashar",
             "de": "Toast mit Sucuk und Kashkaval-Käse"
           },
-          "fiyat": "140,00 TL",
+          "fiyat": "160,00 TL",
           "gorsel": "image/tostlar/sucuklutost.png"
         },
         {
@@ -174,7 +174,7 @@
             "es": "Tostado con carne asada y queso",
             "de": "Toast mit gebratenem Fleisch und Käse"
           },
-          "fiyat": "220,00 TL",
+          "fiyat": "200,00 TL",
           "gorsel": "image/tostlar/kavurmalitost.jpeg"
         }
       ]

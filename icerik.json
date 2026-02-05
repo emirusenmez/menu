@@ -103,7 +103,7 @@
             "de": "Toast mit Kashkaval-Käse"
           },
           "fiyat": "120,00 TL",
-          "gorsel": "image/tostlar/kaşarlıtost.png"
+          "gorsel": "image/tostlar/kasarlitost.png"
         },
         {
           "isim": {
@@ -139,7 +139,7 @@
             "de": "Toast mit gebratenem Fleisch"
           },
           "fiyat": "150,00 TL",
-          "gorsel": "image/tostlar/kavurmalıtost.jpeg"
+          "gorsel": "image/tostlar/kavurmalitost.jpeg"
         },
         {
           "isim": {
@@ -175,7 +175,7 @@
             "de": "Toast mit gebratenem Fleisch und Käse"
           },
           "fiyat": "220,00 TL",
-          "gorsel": "image/tostlar/kavurmalıtost.jpeg"
+          "gorsel": "image/tostlar/kavurmalitost.jpeg"
         }
       ]
     },

@@ -125,7 +125,7 @@
         .category-nav {
             background: white;
             position: sticky;
-            top: 58px;
+            top: 0;
             z-index: 99;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
             display: none;
@@ -345,7 +345,7 @@
         /* Kategori Bölümleri */
         .menu-category {
             margin-bottom: 30px;
-            scroll-margin-top: 130px;
+            scroll-margin-top: 140px;
         }
 
         .menu-category-header {
@@ -743,14 +743,14 @@
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                 <polyline points="9 22 9 12 15 12 15 22"/>
             </svg>
-            <span>Menu</span>
+            <span id="nav-menu-text">Menu</span>
         </button>
         <button class="nav-item" id="nav-search" onclick="openSearch()">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="11" cy="11" r="8"/>
                 <path d="m21 21-4.35-4.35"/>
             </svg>
-            <span>Urun Ara</span>
+            <span id="nav-search-text">Urun Ara</span>
         </button>
         <button class="nav-item" onclick="toggleLanguage()">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -758,7 +758,7 @@
                 <line x1="2" y1="12" x2="22" y2="12"/>
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
             </svg>
-            <span>TR</span>
+            <span id="nav-lang-text">TR</span>
         </button>
     </nav>
 
@@ -768,6 +768,20 @@
         let currentSlide = 0;
         let sliderInterval = null;
         let currentLang = localStorage.getItem('menuLang') || 'tr';
+        const languages = ['tr', 'en', 'es', 'de', 'ar'];
+        const uiTranslations = {
+            tr: { menu: 'Menu', search: 'Urun Ara', searchPlaceholder: 'Urun Ara...' },
+            en: { menu: 'Menu', search: 'Search', searchPlaceholder: 'Search...' },
+            es: { menu: 'Menu', search: 'Buscar', searchPlaceholder: 'Buscar...' },
+            de: { menu: 'Menu', search: 'Suchen', searchPlaceholder: 'Suchen...' },
+            ar: { menu: 'القائمة', search: 'بحث', searchPlaceholder: 'بحث...' }
+        };
+
+        function toggleLanguage() {
+            const currentIndex = languages.indexOf(currentLang);
+            const nextIndex = (currentIndex + 1) % languages.length;
+            changeLanguage(languages[nextIndex]);
+        }
 
         // Veri yukle
         async function loadData() {
@@ -857,6 +871,13 @@
             document.getElementById('home-page').style.display = 'block';
             document.getElementById('bottom-nav').style.display = 'flex';
 
+            // Bottom nav ve arama ceviri
+            const ui = uiTranslations[currentLang] || uiTranslations['tr'];
+            document.getElementById('nav-menu-text').textContent = ui.menu;
+            document.getElementById('nav-search-text').textContent = ui.search;
+            document.getElementById('nav-lang-text').textContent = currentLang.toUpperCase();
+            document.getElementById('search-input').placeholder = ui.searchPlaceholder;
+
             // Slider baslat
             startSlider();
         }
@@ -893,6 +914,7 @@
             dots.querySelectorAll('.dot').forEach(dot => {
                 dot.addEventListener('click', () => {
                     goToSlide(parseInt(dot.dataset.slide));
+                    startSlider();
                 });
             });
         }
@@ -902,6 +924,7 @@
 
             // Her kategori için temsili görsel
             const categoryImages = {
+                'tost-cesitleri': 'image/tostlar/susucklukaşarlıtost.jpeg',
                 'yemekler': 'image/yemekler/adana_porsiyon.jpg',
                 'aperatifler': 'image/aperatifler/tavukburger.jpg',
                 'makarnalar': 'image/makarnalar/fettuccinealfredo.jpg',
@@ -975,8 +998,23 @@
 
         // Slider fonksiyonlari
         function goToSlide(index) {
-            currentSlide = index;
-            document.getElementById('slider').style.transform = `translateX(-${currentSlide * 100}%)`;
+            const slider = document.getElementById('slider');
+            const totalSlides = menuData.slider.length;
+
+            // Son slide'dan ilk slide'a geçişte animasyonu kapat
+            if (currentSlide === totalSlides - 1 && index === 0) {
+                slider.style.transition = 'none';
+                currentSlide = index;
+                slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+                // Reflow tetikle, sonra animasyonu geri aç
+                slider.offsetHeight;
+                slider.style.transition = 'transform 0.5s ease-in-out';
+            } else {
+                slider.style.transition = 'transform 0.5s ease-in-out';
+                currentSlide = index;
+                slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+
             document.querySelectorAll('.dot').forEach((dot, i) => {
                 dot.classList.toggle('active', i === currentSlide);
             });
@@ -988,15 +1026,32 @@
         }
 
         function startSlider() {
+            if (sliderInterval) {
+                clearInterval(sliderInterval);
+            }
             sliderInterval = setInterval(nextSlide, 4000);
         }
 
         // Sayfa gecisleri
+        function updateStickyPositions() {
+            const header = document.getElementById('header');
+            const categoryNav = document.getElementById('category-nav');
+            const headerHeight = header.offsetHeight;
+            categoryNav.style.top = headerHeight + 'px';
+
+            const navHeight = categoryNav.offsetHeight;
+            document.querySelectorAll('.menu-category').forEach(el => {
+                el.style.scrollMarginTop = (headerHeight + navHeight + 10) + 'px';
+            });
+        }
+
         function showMenuPage(category) {
             document.getElementById('home-page').style.display = 'none';
             document.getElementById('menu-page').classList.add('active');
             document.getElementById('category-nav').classList.add('visible');
             document.getElementById('back-btn').classList.add('visible');
+
+            updateStickyPositions();
 
             setTimeout(() => {
                 scrollToCategory(category);
@@ -1030,6 +1085,13 @@
             document.getElementById('search-modal').classList.remove('active');
             window.scrollTo(0, 0);
         }
+
+        // Resize dinleyici
+        window.addEventListener('resize', () => {
+            if (document.getElementById('menu-page').classList.contains('active')) {
+                updateStickyPositions();
+            }
+        });
 
         // Scroll dinleyici
         window.addEventListener('scroll', () => {

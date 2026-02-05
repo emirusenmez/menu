@@ -1,0 +1,106 @@
+TOST CESITLERI (YENİ KATEGORİ)
+Kasarli Tost - 120,00 TL
+Sucuklu Tost - 130,00 TL
+Kavurmali Tost - 150,00 TL
+Sucuk-Kasarli Tost - 140,00 TL
+Kavurma-Kasarli Tost - 220,00 TL
+
+YEMEKLER
+Mercimek Corbasi - 100,00 TL
+Adana Kebap Porsiyon - 450,00 TL
+Adana Durum - 250,00 TL
+Urfa Kebap Porsiyon - 450,00 TL
+Urfa Durum - 250,00 TL
+Kofte Porsiyon - 350,00 TL
+Ekmek Arasi Kofte - 200,00 TL
+Tavuk Sis Porsiyon - 350,00 TL
+Tavuk Sis Durum - 200,00 TL
+
+APERATIFLER
+Patates Kizartmasi - 55,00 TL
+Sogan Halkasi - 60,00 TL
+Tavuk Sepeti - 120,00 TL
+Tavuk Burger - 110,00 TL
+Sosisli Patates - 80,00 TL
+Karisik Atistirmalik - 95,00 TL
+Fajita - Etli - 130,00 TL
+Izgara Tavuk Dilimleri - 115,00 TL
+Kori Soslu Tavuk - 125,00 TL
+Dana Etli Noodle - 140,00 TL
+But Izgara Kulbasti - 160,00 TL
+
+MAKARNALAR
+Fettuccine Alfredo - 95,00 TL
+Spaghetti Napolitan - 90,00 TL
+
+KAHVELER (Hepsi 100 TL)
+Turk Kahvesi - 100,00 TL
+Espresso - 100,00 TL
+Americano - 100,00 TL
+Cafe Latte - 100,00 TL
+Espresso Macchiato - 100,00 TL
+White Chocolate Mocha - 100,00 TL
+Nescafe Sade - 100,00 TL
+Nescafe Sutlu - 100,00 TL
+
+SOĞUK KAHVELER
+Ice Latte - 100,00 TL
+Ice Americano - 100,00 TL
+Ice Caramel Macchiato - 100,00 TL
+
+SICAK ICECEKLER
+Cay - 25,00 TL
+Fincan Cay - 50,00 TL
+Bitki Caylari - 50,00 TL
+Sahlep - 100,00 TL
+Mihrima Sultan Sutlu - 100,00 TL
+
+SOGUK ICECEKLER
+Kola - 70,00 TL
+Fanta - 70,00 TL
+Sprite - 70,00 TL
+Churchill - 50,00 TL
+Red Bull - 120,00 TL
+Ayran Sade - 35,00 TL
+Meyveli Soda - 40,00 TL
+Seftali Suyu - 70,00 TL
+Visne Suyu - 70,00 TL
+Su - 25,00 TL
+
+TATLILAR
+Trilece - 130,00 TL
+Profiterol - 130,00 TL
+Firin Sutlac - 130,00 TL
+Kazandibi - 130,00 TL
+Keskul - 130,00 TL
+Meyve Tabagi - 130,00 TL
+Magnolya Cesitleri - 130,00 TL
+
+NARGILELER
+Aromali Nargile - 350,00 TL
+Tombeki Nargile - 350,00 TL
+
+MASA SARJI
+Masa Sarji Hizmeti - 30,00 TL
+
+
+Eksikler
+APERATIFLER (11 ürün - eski fiyatlarla duruyor):
+
+Ürün	Mevcut Fiyat
+Patates Kizartmasi	55,00 TL
+Sogan Halkasi	60,00 TL
+Tavuk Sepeti	120,00 TL
+Tavuk Burger	110,00 TL
+Sosisli Patates	80,00 TL
+Karisik Atistirmalik	95,00 TL
+Fajita - Etli	130,00 TL
+Izgara Tavuk Dilimleri	115,00 TL
+Kori Soslu Tavuk	125,00 TL
+Dana Etli Noodle	140,00 TL
+But Izgara Kulbasti	160,00 TL
+MAKARNALAR (2 ürün - eski fiyatlarla duruyor):
+
+Ürün	Mevcut Fiyat
+Fettuccine Alfredo	95,00 TL
+Spaghetti Napolitan	90,00 TL

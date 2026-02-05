@@ -76,6 +76,110 @@
   ],
   "kategoriler": [
     {
+      "id": "tost-cesitleri",
+      "isim": {
+        "tr": "Tost Cesitleri",
+        "en": "Toasted Sandwiches",
+        "ar": "أنواع التوست",
+        "es": "Tostados",
+        "de": "Toast-Variationen"
+      },
+      "icon": "🥪",
+      "renk": "#E8A735",
+      "urunler": [
+        {
+          "isim": {
+            "tr": "Kasarli Tost",
+            "en": "Cheese Toast",
+            "ar": "توست بالجبن",
+            "es": "Tostado con Queso",
+            "de": "Käse-Toast"
+          },
+          "aciklama": {
+            "tr": "Kasarli tost",
+            "en": "Toasted sandwich with cheese",
+            "ar": "توست بالجبن الكشري",
+            "es": "Tostado con queso kashar",
+            "de": "Toast mit Kashkaval-Käse"
+          },
+          "fiyat": "120,00 TL",
+          "gorsel": "image/tostlar/kaşarlıtost.png"
+        },
+        {
+          "isim": {
+            "tr": "Sucuklu Tost",
+            "en": "Sujuk Toast",
+            "ar": "توست بالسجق",
+            "es": "Tostado con Sujuk",
+            "de": "Sucuk-Toast"
+          },
+          "aciklama": {
+            "tr": "Sucuklu tost",
+            "en": "Toasted sandwich with sujuk sausage",
+            "ar": "توست بالسجق التركي",
+            "es": "Tostado con salchicha sujuk",
+            "de": "Toast mit Sucuk-Wurst"
+          },
+          "fiyat": "150,00 TL",
+          "gorsel": "image/tostlar/kaşarlıtost.png"
+        },
+        {
+          "isim": {
+            "tr": "Kavurmali Tost",
+            "en": "Roasted Meat Toast",
+            "ar": "توست بالقاورما",
+            "es": "Tostado con Carne Asada",
+            "de": "Kavurma-Toast"
+          },
+          "aciklama": {
+            "tr": "Kavurmali tost",
+            "en": "Toasted sandwich with roasted meat",
+            "ar": "توست باللحم المقلي",
+            "es": "Tostado con carne asada",
+            "de": "Toast mit gebratenem Fleisch"
+          },
+          "fiyat": "150,00 TL",
+          "gorsel": "image/tostlar/kaşarlıtost.png"
+        },
+        {
+          "isim": {
+            "tr": "Sucuk-Kasarli Tost",
+            "en": "Sujuk & Cheese Toast",
+            "ar": "توست بالسجق والجبن",
+            "es": "Tostado con Sujuk y Queso",
+            "de": "Sucuk-Käse-Toast"
+          },
+          "aciklama": {
+            "tr": "Sucuk ve kasarli tost",
+            "en": "Toasted sandwich with sujuk and cheese",
+            "ar": "توست بالسجق والجبن الكشري",
+            "es": "Tostado con sujuk y queso kashar",
+            "de": "Toast mit Sucuk und Kashkaval-Käse"
+          },
+          "fiyat": "140,00 TL",
+          "gorsel": "image/tostlar/susucklukaşarlıtost.jpeg"
+        },
+        {
+          "isim": {
+            "tr": "Kavurma-Kasarli Tost",
+            "en": "Roasted Meat & Cheese Toast",
+            "ar": "توست بالقاورما والجبن",
+            "es": "Tostado con Carne Asada y Queso",
+            "de": "Kavurma-Käse-Toast"
+          },
+          "aciklama": {
+            "tr": "Kavurma ve kasarli tost",
+            "en": "Toasted sandwich with roasted meat and cheese",
+            "ar": "توست باللحم المقلي والجبن",
+            "es": "Tostado con carne asada y queso",
+            "de": "Toast mit gebratenem Fleisch und Käse"
+          },
+          "fiyat": "220,00 TL",
+          "gorsel": "image/tostlar/kaşarlıtost.png"
+        }
+      ]
+    },
+    {
       "id": "yemekler",
       "isim": {
         "tr": "Yemekler",
@@ -102,7 +206,7 @@
             "es": "Sopa de lentejas tradicional",
             "de": "Traditionelle Linsensuppe"
           },
-          "fiyat": "50,00 TL",
+          "fiyat": "100,00 TL",
           "gorsel": "image/yemekler/mercimek-corba.jpg"
         },
         {
@@ -120,7 +224,7 @@
             "es": "Servido con arroz y ensalada",
             "de": "Mit Reis und Salat serviert"
           },
-          "fiyat": "180,00 TL",
+          "fiyat": "450,00 TL",
           "gorsel": "image/yemekler/adana_porsiyon.jpg"
         },
         {
@@ -138,7 +242,7 @@
             "es": "Kebab Adana en pan lavash",
             "de": "Adana Kebab im Lavash-Brot"
           },
-          "fiyat": "120,00 TL",
+          "fiyat": "250,00 TL",
           "gorsel": "image/yemekler/adanadurum.jpg"
         },
         {
@@ -156,8 +260,26 @@
             "es": "Servido con arroz y ensalada",
             "de": "Mit Reis und Salat serviert"
           },
-          "fiyat": "180,00 TL",
+          "fiyat": "450,00 TL",
           "gorsel": "image/yemekler/urfa-kebap-porsiyon.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Urfa Durum",
+            "en": "Urfa Wrap",
+            "ar": "لفة أورفة",
+            "es": "Wrap de Urfa",
+            "de": "Urfa Wrap"
+          },
+          "aciklama": {
+            "tr": "Lavas ekmeğinde urfa kebap",
+            "en": "Urfa kebab in lavash bread",
+            "ar": "كباب أورفة في خبز لافاش",
+            "es": "Kebab Urfa en pan lavash",
+            "de": "Urfa Kebab im Lavash-Brot"
+          },
+          "fiyat": "250,00 TL",
+          "gorsel": "image/yemekler/urfadurum.jpg"
         },
         {
           "isim": {
@@ -174,7 +296,7 @@
             "es": "Albóndigas a la parrilla con arroz y ensalada",
             "de": "Gegrillte Köfte mit Reis und Salat"
           },
-          "fiyat": "150,00 TL",
+          "fiyat": "350,00 TL",
           "gorsel": "image/yemekler/porsiyon köfte.jpg"
         },
         {
@@ -192,7 +314,7 @@
             "es": "Albóndigas a la parrilla en pan fresco",
             "de": "Gegrillte Köfte in frischem Brot"
           },
-          "fiyat": "90,00 TL",
+          "fiyat": "200,00 TL",
           "gorsel": "image/yemekler/ekmek_arası_kofte.jpg"
         },
         {
@@ -210,7 +332,7 @@
             "es": "Brochetas de pollo marinadas con arroz y ensalada",
             "de": "Marinierte Hähnchenspieße mit Reis und Salat"
           },
-          "fiyat": "140,00 TL",
+          "fiyat": "350,00 TL",
           "gorsel": "image/yemekler/tavuk_sis_porsiyon.jpg"
         },
         {
@@ -228,11 +350,745 @@
             "es": "Brochetas de pollo en pan lavash",
             "de": "Hähnchenspieße im Lavash-Brot"
           },
-          "fiyat": "100,00 TL",
+          "fiyat": "200,00 TL",
           "gorsel": "image/yemekler/tavuksisdurum.jpg"
         }
       ]
     },
+    {
+      "id": "kahveler",
+      "isim": {
+        "tr": "Kahveler",
+        "en": "Coffee",
+        "ar": "القهوة",
+        "es": "Cafés",
+        "de": "Kaffee"
+      },
+      "icon": "☕",
+      "renk": "#6F4E37",
+      "urunler": [
+        {
+          "isim": {
+            "tr": "Turk Kahvesi",
+            "en": "Turkish Coffee",
+            "ar": "القهوة التركية",
+            "es": "Café Turco",
+            "de": "Türkischer Kaffee"
+          },
+          "aciklama": {
+            "tr": "Geleneksel turk kahvesi",
+            "en": "Traditional Turkish coffee",
+            "ar": "قهوة تركية تقليدية",
+            "es": "Café turco tradicional",
+            "de": "Traditioneller türkischer Kaffee"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/turkkahvesi.png"
+        },
+        {
+          "isim": {
+            "tr": "Espresso",
+            "en": "Espresso",
+            "ar": "إسبريسو",
+            "es": "Espresso",
+            "de": "Espresso"
+          },
+          "aciklama": {
+            "tr": "Tek shot espresso",
+            "en": "Single shot espresso",
+            "ar": "إسبريسو شوت واحد",
+            "es": "Espresso sencillo",
+            "de": "Einzelner Espresso"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/461-singleespresso.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Americano",
+            "en": "Americano",
+            "ar": "أمريكانو",
+            "es": "Americano",
+            "de": "Americano"
+          },
+          "aciklama": {
+            "tr": "Filtre kahve tadi",
+            "en": "Filter coffee taste",
+            "ar": "طعم القهوة المفلترة",
+            "es": "Sabor a café filtrado",
+            "de": "Filterkaffee-Geschmack"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/126-americano2.png"
+        },
+        {
+          "isim": {
+            "tr": "Cafe Latte",
+            "en": "Cafe Latte",
+            "ar": "كافيه لاتيه",
+            "es": "Café Latte",
+            "de": "Café Latte"
+          },
+          "aciklama": {
+            "tr": "Sutlu espresso",
+            "en": "Milky espresso",
+            "ar": "إسبريسو بالحليب",
+            "es": "Espresso con leche",
+            "de": "Espresso mit Milch"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/976-cafelatte.png"
+        },
+        {
+          "isim": {
+            "tr": "Espresso Macchiato",
+            "en": "Espresso Macchiato",
+            "ar": "إسبريسو ماكياتو",
+            "es": "Espresso Macchiato",
+            "de": "Espresso Macchiato"
+          },
+          "aciklama": {
+            "tr": "Espresso, sutlu kopuk ile",
+            "en": "Espresso with milk foam",
+            "ar": "إسبريسو مع رغوة الحليب",
+            "es": "Espresso con espuma de leche",
+            "de": "Espresso mit Milchschaum"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/908-espressomacchiato.jpg"
+        },
+        {
+          "isim": {
+            "tr": "White Chocolate Mocha",
+            "en": "White Chocolate Mocha",
+            "ar": "موكا الشوكولاتة البيضاء",
+            "es": "Mocha de Chocolate Blanco",
+            "de": "Weiße Schokoladen-Mocha"
+          },
+          "aciklama": {
+            "tr": "Beyaz cikolatali mocha",
+            "en": "White chocolate mocha",
+            "ar": "موكا بالشوكولاتة البيضاء",
+            "es": "Mocha con chocolate blanco",
+            "de": "Mocha mit weißer Schokolade"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/138-whitechocolatemocha.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Nescafe Sade",
+            "en": "Plain Nescafe",
+            "ar": "نسكافيه سادة",
+            "es": "Nescafé Solo",
+            "de": "Nescafé Pur"
+          },
+          "aciklama": {
+            "tr": "Sade nescafe",
+            "en": "Plain instant coffee",
+            "ar": "قهوة فورية سادة",
+            "es": "Café instantáneo solo",
+            "de": "Purer Instantkaffee"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/855-nescafesade.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Nescafe Sutlu",
+            "en": "Nescafe with Milk",
+            "ar": "نسكافيه بالحليب",
+            "es": "Nescafé con Leche",
+            "de": "Nescafé mit Milch"
+          },
+          "aciklama": {
+            "tr": "Sutlu nescafe",
+            "en": "Instant coffee with milk",
+            "ar": "قهوة فورية بالحليب",
+            "es": "Café instantáneo con leche",
+            "de": "Instantkaffee mit Milch"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/kahveler/sıcak kahveler/358-nescafesutlu.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Ice Latte",
+            "en": "Ice Latte",
+            "ar": "آيس لاتيه",
+            "es": "Café Latte Helado",
+            "de": "Eiskaffee Latte"
+          },
+          "aciklama": {
+            "tr": "Buzlu sutlu espresso",
+            "en": "Iced milky espresso",
+            "ar": "إسبريسو بارد بالحليب",
+            "es": "Espresso helado con leche",
+            "de": "Eisgekühlter Espresso mit Milch"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/kahveler/soğuk kahveler/435-icelatte.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Ice Americano",
+            "en": "Ice Americano",
+            "ar": "آيس أمريكانو",
+            "es": "Americano Helado",
+            "de": "Eis-Americano"
+          },
+          "aciklama": {
+            "tr": "Buzlu americano",
+            "en": "Iced americano",
+            "ar": "أمريكانو بارد",
+            "es": "Americano helado",
+            "de": "Eisgekühlter Americano"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/kahveler/soğuk kahveler/788-iceamericano.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Ice Caramel Macchiato",
+            "en": "Ice Caramel Macchiato",
+            "ar": "آيس كراميل ماكياتو",
+            "es": "Macchiato de Caramelo Helado",
+            "de": "Eis-Karamell-Macchiato"
+          },
+          "aciklama": {
+            "tr": "Buzlu karamelli macchiato",
+            "en": "Iced caramel macchiato",
+            "ar": "ماكياتو كراميل بارد",
+            "es": "Macchiato de caramelo helado",
+            "de": "Eisgekühlter Karamell-Macchiato"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/kahveler/soğuk kahveler/981-icecaramelmacchiato.jpg"
+        }
+      ]
+    },
+    {
+      "id": "sicak-icecekler",
+      "isim": {
+        "tr": "Sicak Icecekler",
+        "en": "Hot Beverages",
+        "ar": "المشروبات الساخنة",
+        "es": "Bebidas Calientes",
+        "de": "Heiße Getränke"
+      },
+      "icon": "☕",
+      "renk": "#D4735A",
+      "urunler": [
+        {
+          "isim": {
+            "tr": "Cay",
+            "en": "Tea",
+            "ar": "الشاي",
+            "es": "Té",
+            "de": "Tee"
+          },
+          "aciklama": {
+            "tr": "Demlik cay",
+            "en": "Pot tea",
+            "ar": "شاي من الإبريق",
+            "es": "Té de tetera",
+            "de": "Tee aus der Kanne"
+          },
+          "fiyat": "25,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/cay.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Fincan Cay",
+            "en": "Cup Tea",
+            "ar": "شاي الكوب",
+            "es": "Taza de Té",
+            "de": "Tasse Tee"
+          },
+          "aciklama": {
+            "tr": "Poset cay",
+            "en": "Tea bag",
+            "ar": "شاي بالكيس",
+            "es": "Bolsita de té",
+            "de": "Teebeutel"
+          },
+          "fiyat": "50,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/fincancay.png"
+        },
+        {
+          "isim": {
+            "tr": "Bitki Caylari",
+            "en": "Herbal Teas",
+            "ar": "شاي الأعشاب",
+            "es": "Tés de Hierbas",
+            "de": "Kräutertees"
+          },
+          "aciklama": {
+            "tr": "Cesitli bitki caylari",
+            "en": "Various herbal teas",
+            "ar": "أنواع مختلفة من شاي الأعشاب",
+            "es": "Varios tés de hierbas",
+            "de": "Verschiedene Kräutertees"
+          },
+          "fiyat": "50,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/bitkicaylari.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Sahlep",
+            "en": "Sahlep",
+            "ar": "السحلب",
+            "es": "Sahlep",
+            "de": "Sahlep"
+          },
+          "aciklama": {
+            "tr": "Geleneksel sicak sahlep",
+            "en": "Traditional hot sahlep",
+            "ar": "سحلب ساخن تقليدي",
+            "es": "Sahlep caliente tradicional",
+            "de": "Traditioneller heißer Sahlep"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/sahlep.png"
+        },
+        {
+          "isim": {
+            "tr": "Mihrima Sultan Sutlu",
+            "en": "Mihrima Sultan with Milk",
+            "ar": "محريمة سلطان بالحليب",
+            "es": "Mihrima Sultan con Leche",
+            "de": "Mihrima Sultan mit Milch"
+          },
+          "aciklama": {
+            "tr": "Ozel tarifle hazirlanmis",
+            "en": "Prepared with special recipe",
+            "ar": "محضر بوصفة خاصة",
+            "es": "Preparado con receta especial",
+            "de": "Mit speziellem Rezept zubereitet"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/Icecekler/sıcak içecekler/mihrimasultansutlu.png"
+        }
+      ]
+    },
+    {
+      "id": "soguk-icecekler",
+      "isim": {
+        "tr": "Soguk Icecekler",
+        "en": "Cold Beverages",
+        "ar": "المشروبات الباردة",
+        "es": "Bebidas Frías",
+        "de": "Kalte Getränke"
+      },
+      "icon": "🥤",
+      "renk": "#4A90E2",
+      "urunler": [
+        {
+          "isim": {
+            "tr": "Kola",
+            "en": "Cola",
+            "ar": "كولا",
+            "es": "Cola",
+            "de": "Cola"
+          },
+          "aciklama": {
+            "tr": "Coca Cola 330ml",
+            "en": "Coca Cola 330ml",
+            "ar": "كوكا كولا 330 مل",
+            "es": "Coca Cola 330ml",
+            "de": "Coca Cola 330ml"
+          },
+          "fiyat": "70,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/kola.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Fanta",
+            "en": "Fanta",
+            "ar": "فانتا",
+            "es": "Fanta",
+            "de": "Fanta"
+          },
+          "aciklama": {
+            "tr": "Fanta 330ml",
+            "en": "Fanta 330ml",
+            "ar": "فانتا 330 مل",
+            "es": "Fanta 330ml",
+            "de": "Fanta 330ml"
+          },
+          "fiyat": "70,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/fanta.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Sprite",
+            "en": "Sprite",
+            "ar": "سبرايت",
+            "es": "Sprite",
+            "de": "Sprite"
+          },
+          "aciklama": {
+            "tr": "Sprite 330ml",
+            "en": "Sprite 330ml",
+            "ar": "سبرايت 330 مل",
+            "es": "Sprite 330ml",
+            "de": "Sprite 330ml"
+          },
+          "fiyat": "70,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/sprite.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Churchill",
+            "en": "Churchill",
+            "ar": "تشرشل",
+            "es": "Churchill",
+            "de": "Churchill"
+          },
+          "aciklama": {
+            "tr": "Churchill 330ml",
+            "en": "Churchill 330ml",
+            "ar": "تشرشل 330 مل",
+            "es": "Churchill 330ml",
+            "de": "Churchill 330ml"
+          },
+          "fiyat": "50,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/churchill.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Red Bull",
+            "en": "Red Bull",
+            "ar": "ريد بُل",
+            "es": "Red Bull",
+            "de": "Red Bull"
+          },
+          "aciklama": {
+            "tr": "Red Bull enerji icecegi 250ml",
+            "en": "Red Bull energy drink 250ml",
+            "ar": "مشروب ريد بُل للطاقة 250 مل",
+            "es": "Bebida energética Red Bull 250ml",
+            "de": "Red Bull Energy-Drink 250ml"
+          },
+          "fiyat": "120,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/redbul.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Ayran Sade",
+            "en": "Plain Ayran",
+            "ar": "عيران سادة",
+            "es": "Ayran Natural",
+            "de": "Ayran Natur"
+          },
+          "aciklama": {
+            "tr": "Meyveli ayran soda",
+            "en": "Fruity ayran soda",
+            "ar": "عيران صودا بالفواكه",
+            "es": "Ayran soda con frutas",
+            "de": "Fruchtiger Ayran-Soda"
+          },
+          "fiyat": "35,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/ayransoda.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Meyveli Soda",
+            "en": "Fruit Soda",
+            "ar": "صودا الفواكه",
+            "es": "Soda de Frutas",
+            "de": "Frucht-Soda"
+          },
+          "aciklama": {
+            "tr": "Cesitli meyve aromali soda",
+            "en": "Various fruit flavored soda",
+            "ar": "صودا بنكهات فواكه متنوعة",
+            "es": "Soda con varios sabores de frutas",
+            "de": "Soda mit verschiedenen Fruchtgeschmäckern"
+          },
+          "fiyat": "40,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/meyvelisoda.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Seftali Suyu",
+            "en": "Peach Juice",
+            "ar": "عصير الخوخ",
+            "es": "Jugo de Durazno",
+            "de": "Pfirsichsaft"
+          },
+          "aciklama": {
+            "tr": "Dogal seftali suyu",
+            "en": "Natural peach juice",
+            "ar": "عصير خوخ طبيعي",
+            "es": "Jugo natural de durazno",
+            "de": "Natürlicher Pfirsichsaft"
+          },
+          "fiyat": "70,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/şeftalisuyu.webp"
+        },
+        {
+          "isim": {
+            "tr": "Visne Suyu",
+            "en": "Sour Cherry Juice",
+            "ar": "عصير الكرز الحامض",
+            "es": "Jugo de Cereza Ácida",
+            "de": "Sauerkirschsaft"
+          },
+          "aciklama": {
+            "tr": "Dogal visne suyu",
+            "en": "Natural sour cherry juice",
+            "ar": "عصير كرز حامض طبيعي",
+            "es": "Jugo natural de cereza ácida",
+            "de": "Natürlicher Sauerkirschsaft"
+          },
+          "fiyat": "70,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/meysu-meyve-visne-200.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Su",
+            "en": "Water",
+            "ar": "ماء",
+            "es": "Agua",
+            "de": "Wasser"
+          },
+          "aciklama": {
+            "tr": "500ml pet sise",
+            "en": "500ml pet bottle",
+            "ar": "زجاجة بلاستيكية 500 مل",
+            "es": "Botella PET de 500ml",
+            "de": "500ml PET-Flasche"
+          },
+          "fiyat": "25,00 TL",
+          "gorsel": "image/Icecekler/soguk içecekler/su.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "tatlilar",
+      "isim": {
+        "tr": "Tatlilar",
+        "en": "Desserts",
+        "ar": "الحلويات",
+        "es": "Postres",
+        "de": "Desserts"
+      },
+      "icon": "🍰",
+      "renk": "#E91E63",
+      "urunler": [
+        {
+          "isim": {
+            "tr": "Trilece",
+            "en": "Tres Leches",
+            "ar": "تريليتشا",
+            "es": "Tres Leches",
+            "de": "Tres Leches"
+          },
+          "aciklama": {
+            "tr": "Sutlu trilece tatlisi",
+            "en": "Milky tres leches dessert",
+            "ar": "حلوى تريليتشا بالحليب",
+            "es": "Postre de tres leches",
+            "de": "Milchiges Tres-Leches-Dessert"
+          },
+          "fiyat": "130,00 TL",
+          "gorsel": "image/tatlılar/trilece.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Profiterol",
+            "en": "Profiterole",
+            "ar": "بروفيترول",
+            "es": "Profiterol",
+            "de": "Profiteroles"
+          },
+          "aciklama": {
+            "tr": "Cikolatali profiterol",
+            "en": "Chocolate profiterole",
+            "ar": "بروفيترول بالشوكولاتة",
+            "es": "Profiterol con chocolate",
+            "de": "Schokoladen-Profiteroles"
+          },
+          "fiyat": "130,00 TL",
+          "gorsel": "image/tatlılar/profiterol.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Firin Sutlac",
+            "en": "Baked Rice Pudding",
+            "ar": "أرز بالحليب مخبوز",
+            "es": "Arroz con Leche al Horno",
+            "de": "Gebackener Milchreis"
+          },
+          "aciklama": {
+            "tr": "Geleneksel firin sutlac",
+            "en": "Traditional baked rice pudding",
+            "ar": "أرز بالحليب مخبوز تقليدي",
+            "es": "Arroz con leche al horno tradicional",
+            "de": "Traditioneller gebackener Milchreis"
+          },
+          "fiyat": "130,00 TL",
+          "gorsel": "image/tatlılar/firinsutlac.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Kazandibi",
+            "en": "Kazandibi",
+            "ar": "قازان ديبي",
+            "es": "Kazandibi",
+            "de": "Kazandibi"
+          },
+          "aciklama": {
+            "tr": "Ozel tarifle kazandibi",
+            "en": "Special recipe kazandibi",
+            "ar": "قازان ديبي بوصفة خاصة",
+            "es": "Kazandibi con receta especial",
+            "de": "Kazandibi nach speziellem Rezept"
+          },
+          "fiyat": "130,00 TL",
+          "gorsel": "image/tatlılar/kazandibi.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Keskul",
+            "en": "Keskul",
+            "ar": "كشكل",
+            "es": "Keskul",
+            "de": "Keskul"
+          },
+          "aciklama": {
+            "tr": "Hindistan cevizli keskul",
+            "en": "Coconut keskul",
+            "ar": "كشكل بجوز الهند",
+            "es": "Keskul con coco",
+            "de": "Keskul mit Kokosnuss"
+          },
+          "fiyat": "130,00 TL",
+          "gorsel": "image/tatlılar/keskul.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Meyve Tabagi",
+            "en": "Fruit Plate",
+            "ar": "طبق الفواكه",
+            "es": "Plato de Frutas",
+            "de": "Obstteller"
+          },
+          "aciklama": {
+            "tr": "Taze mevsim meyveleri",
+            "en": "Fresh seasonal fruits",
+            "ar": "فواكه موسمية طازجة",
+            "es": "Frutas frescas de temporada",
+            "de": "Frische saisonale Früchte"
+          },
+          "fiyat": "130,00 TL",
+          "gorsel": "image/tatlılar/meyve.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Magnolya Cesitleri",
+            "en": "Magnolia Varieties",
+            "ar": "أصناف ماغنوليا",
+            "es": "Variedades de Magnolia",
+            "de": "Magnolia-Variationen"
+          },
+          "aciklama": {
+            "tr": "Cesitli magnolya tatlilari",
+            "en": "Various magnolia desserts",
+            "ar": "حلويات ماغنوليا متنوعة",
+            "es": "Diversos postres de magnolia",
+            "de": "Verschiedene Magnolia-Desserts"
+          },
+          "fiyat": "130,00 TL",
+          "gorsel": "image/tatlılar/magnolya.jpg"
+        }
+      ]
+    },
+    {
+      "id": "nargileler",
+      "isim": {
+        "tr": "Nargileler",
+        "en": "Hookah",
+        "ar": "الشيشة",
+        "es": "Narguile",
+        "de": "Wasserpfeife"
+      },
+      "icon": "💨",
+      "renk": "#1E3A5F",
+      "urunler": [
+        {
+          "isim": {
+            "tr": "Aromali Nargile",
+            "en": "Flavored Hookah",
+            "ar": "شيشة بالنكهات",
+            "es": "Narguile con Sabor",
+            "de": "Aromatisierte Wasserpfeife"
+          },
+          "aciklama": {
+            "tr": "Cesitli aromalar (Elma, Uzum, Seftali, Kavun, Karpuz)",
+            "en": "Various flavors (Apple, Grape, Peach, Melon, Watermelon)",
+            "ar": "نكهات متنوعة (تفاح، عنب، خوخ، شمام، بطيخ)",
+            "es": "Varios sabores (Manzana, Uva, Durazno, Melón, Sandía)",
+            "de": "Verschiedene Geschmacksrichtungen (Apfel, Traube, Pfirsich, Melone, Wassermelone)"
+          },
+          "fiyat": "350,00 TL",
+          "gorsel": "image/nargileler/nargile_aromalılar.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Tombeki Nargile",
+            "en": "Tombeki Hookah",
+            "ar": "شيشة تومبكي",
+            "es": "Narguile Tombeki",
+            "de": "Tombeki Wasserpfeife"
+          },
+          "aciklama": {
+            "tr": "Geleneksel tombeki nargile",
+            "en": "Traditional tombeki hookah",
+            "ar": "شيشة تومبكي تقليدية",
+            "es": "Narguile tombeki tradicional",
+            "de": "Traditionelle Tombeki-Wasserpfeife"
+          },
+          "fiyat": "350,00 TL",
+          "gorsel": "image/nargileler/tömbeki_nargile.jpg"
+        }
+      ]
+    },
+    {
+      "id": "masa-sarji",
+      "isim": {
+        "tr": "Masa Sarji",
+        "en": "Table Charging",
+        "ar": "شحن الطاولة",
+        "es": "Carga de Mesa",
+        "de": "Tisch-Aufladung"
+      },
+      "icon": "🔌",
+      "renk": "#FF6B35",
+      "urunler": [
+        {
+          "isim": {
+            "tr": "Masa Sarji Hizmeti",
+            "en": "Table Charging Service",
+            "ar": "خدمة شحن الطاولة",
+            "es": "Servicio de Carga en Mesa",
+            "de": "Tisch-Ladedienst"
+          },
+          "aciklama": {
+            "tr": "Masanizda telefon sarj imkani, her jeton 30 dakika sürer",
+            "en": "Phone charging at your table, each token lasts 30 minutes",
+            "ar": "شحن الهاتف على طاولتك، كل عملة تستمر 30 دقيقة",
+            "es": "Carga de teléfono en tu mesa, cada ficha dura 30 minutos",
+            "de": "Telefon-Aufladung an Ihrem Tisch, jeder Token dauert 30 Minuten"
+          },
+          "fiyat": "30,00 TL",
+          "gorsel": "image/masa şarjı/masaşarjı.jpeg"
+        }
+      ]
+    }
+  ],
+  "devre_disi_kategoriler": [
     {
       "id": "aperatifler",
       "isim": {
@@ -492,738 +1348,6 @@
           },
           "fiyat": "90,00 TL",
           "gorsel": "image/makarnalar/spagettinapolitan.jpg"
-        }
-      ]
-    },
-    {
-      "id": "kahveler",
-      "isim": {
-        "tr": "Kahveler",
-        "en": "Coffee",
-        "ar": "القهوة",
-        "es": "Cafés",
-        "de": "Kaffee"
-      },
-      "icon": "☕",
-      "renk": "#6F4E37",
-      "urunler": [
-        {
-          "isim": {
-            "tr": "Turk Kahvesi",
-            "en": "Turkish Coffee",
-            "ar": "القهوة التركية",
-            "es": "Café Turco",
-            "de": "Türkischer Kaffee"
-          },
-          "aciklama": {
-            "tr": "Geleneksel turk kahvesi",
-            "en": "Traditional Turkish coffee",
-            "ar": "قهوة تركية تقليدية",
-            "es": "Café turco tradicional",
-            "de": "Traditioneller türkischer Kaffee"
-          },
-          "fiyat": "45,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/turkkahvesi.png"
-        },
-        {
-          "isim": {
-            "tr": "Espresso",
-            "en": "Espresso",
-            "ar": "إسبريسو",
-            "es": "Espresso",
-            "de": "Espresso"
-          },
-          "aciklama": {
-            "tr": "Tek shot espresso",
-            "en": "Single shot espresso",
-            "ar": "إسبريسو شوت واحد",
-            "es": "Espresso sencillo",
-            "de": "Einzelner Espresso"
-          },
-          "fiyat": "40,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/461-singleespresso.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Americano",
-            "en": "Americano",
-            "ar": "أمريكانو",
-            "es": "Americano",
-            "de": "Americano"
-          },
-          "aciklama": {
-            "tr": "Filtre kahve tadi",
-            "en": "Filter coffee taste",
-            "ar": "طعم القهوة المفلترة",
-            "es": "Sabor a café filtrado",
-            "de": "Filterkaffee-Geschmack"
-          },
-          "fiyat": "50,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/126-americano2.png"
-        },
-        {
-          "isim": {
-            "tr": "Cafe Latte",
-            "en": "Cafe Latte",
-            "ar": "كافيه لاتيه",
-            "es": "Café Latte",
-            "de": "Café Latte"
-          },
-          "aciklama": {
-            "tr": "Sutlu espresso",
-            "en": "Milky espresso",
-            "ar": "إسبريسو بالحليب",
-            "es": "Espresso con leche",
-            "de": "Espresso mit Milch"
-          },
-          "fiyat": "60,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/976-cafelatte.png"
-        },
-        {
-          "isim": {
-            "tr": "Espresso Macchiato",
-            "en": "Espresso Macchiato",
-            "ar": "إسبريسو ماكياتو",
-            "es": "Espresso Macchiato",
-            "de": "Espresso Macchiato"
-          },
-          "aciklama": {
-            "tr": "Espresso, sutlu kopuk ile",
-            "en": "Espresso with milk foam",
-            "ar": "إسبريسو مع رغوة الحليب",
-            "es": "Espresso con espuma de leche",
-            "de": "Espresso mit Milchschaum"
-          },
-          "fiyat": "55,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/908-espressomacchiato.jpg"
-        },
-        {
-          "isim": {
-            "tr": "White Chocolate Mocha",
-            "en": "White Chocolate Mocha",
-            "ar": "موكا الشوكولاتة البيضاء",
-            "es": "Mocha de Chocolate Blanco",
-            "de": "Weiße Schokoladen-Mocha"
-          },
-          "aciklama": {
-            "tr": "Beyaz cikolatali mocha",
-            "en": "White chocolate mocha",
-            "ar": "موكا بالشوكولاتة البيضاء",
-            "es": "Mocha con chocolate blanco",
-            "de": "Mocha mit weißer Schokolade"
-          },
-          "fiyat": "70,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/138-whitechocolatemocha.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Nescafe Sade",
-            "en": "Plain Nescafe",
-            "ar": "نسكافيه سادة",
-            "es": "Nescafé Solo",
-            "de": "Nescafé Pur"
-          },
-          "aciklama": {
-            "tr": "Sade nescafe",
-            "en": "Plain instant coffee",
-            "ar": "قهوة فورية سادة",
-            "es": "Café instantáneo solo",
-            "de": "Purer Instantkaffee"
-          },
-          "fiyat": "35,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/855-nescafesade.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Nescafe Sutlu",
-            "en": "Nescafe with Milk",
-            "ar": "نسكافيه بالحليب",
-            "es": "Nescafé con Leche",
-            "de": "Nescafé mit Milch"
-          },
-          "aciklama": {
-            "tr": "Sutlu nescafe",
-            "en": "Instant coffee with milk",
-            "ar": "قهوة فورية بالحليب",
-            "es": "Café instantáneo con leche",
-            "de": "Instantkaffee mit Milch"
-          },
-          "fiyat": "40,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/358-nescafesutlu.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Ice Latte",
-            "en": "Ice Latte",
-            "ar": "آيس لاتيه",
-            "es": "Café Latte Helado",
-            "de": "Eiskaffee Latte"
-          },
-          "aciklama": {
-            "tr": "Buzlu sutlu espresso",
-            "en": "Iced milky espresso",
-            "ar": "إسبريسو بارد بالحليب",
-            "es": "Espresso helado con leche",
-            "de": "Eisgekühlter Espresso mit Milch"
-          },
-          "fiyat": "65,00 TL",
-          "gorsel": "image/kahveler/soğuk kahveler/435-icelatte.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Ice Americano",
-            "en": "Ice Americano",
-            "ar": "آيس أمريكانو",
-            "es": "Americano Helado",
-            "de": "Eis-Americano"
-          },
-          "aciklama": {
-            "tr": "Buzlu americano",
-            "en": "Iced americano",
-            "ar": "أمريكانو بارد",
-            "es": "Americano helado",
-            "de": "Eisgekühlter Americano"
-          },
-          "fiyat": "55,00 TL",
-          "gorsel": "image/kahveler/soğuk kahveler/788-iceamericano.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Ice Caramel Macchiato",
-            "en": "Ice Caramel Macchiato",
-            "ar": "آيس كراميل ماكياتو",
-            "es": "Macchiato de Caramelo Helado",
-            "de": "Eis-Karamell-Macchiato"
-          },
-          "aciklama": {
-            "tr": "Buzlu karamelli macchiato",
-            "en": "Iced caramel macchiato",
-            "ar": "ماكياتو كراميل بارد",
-            "es": "Macchiato de caramelo helado",
-            "de": "Eisgekühlter Karamell-Macchiato"
-          },
-          "fiyat": "70,00 TL",
-          "gorsel": "image/kahveler/soğuk kahveler/981-icecaramelmacchiato.jpg"
-        }
-      ]
-    },
-    {
-      "id": "sicak-icecekler",
-      "isim": {
-        "tr": "Sicak Icecekler",
-        "en": "Hot Beverages",
-        "ar": "المشروبات الساخنة",
-        "es": "Bebidas Calientes",
-        "de": "Heiße Getränke"
-      },
-      "icon": "☕",
-      "renk": "#D4735A",
-      "urunler": [
-        {
-          "isim": {
-            "tr": "Cay",
-            "en": "Tea",
-            "ar": "الشاي",
-            "es": "Té",
-            "de": "Tee"
-          },
-          "aciklama": {
-            "tr": "Demlik cay",
-            "en": "Pot tea",
-            "ar": "شاي من الإبريق",
-            "es": "Té de tetera",
-            "de": "Tee aus der Kanne"
-          },
-          "fiyat": "20,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/cay.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Fincan Cay",
-            "en": "Cup Tea",
-            "ar": "شاي الكوب",
-            "es": "Taza de Té",
-            "de": "Tasse Tee"
-          },
-          "aciklama": {
-            "tr": "Poset cay",
-            "en": "Tea bag",
-            "ar": "شاي بالكيس",
-            "es": "Bolsita de té",
-            "de": "Teebeutel"
-          },
-          "fiyat": "15,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/fincancay.png"
-        },
-        {
-          "isim": {
-            "tr": "Bitki Caylari",
-            "en": "Herbal Teas",
-            "ar": "شاي الأعشاب",
-            "es": "Tés de Hierbas",
-            "de": "Kräutertees"
-          },
-          "aciklama": {
-            "tr": "Cesitli bitki caylari",
-            "en": "Various herbal teas",
-            "ar": "أنواع مختلفة من شاي الأعشاب",
-            "es": "Varios tés de hierbas",
-            "de": "Verschiedene Kräutertees"
-          },
-          "fiyat": "30,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/bitkicaylari.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Sahlep",
-            "en": "Sahlep",
-            "ar": "السحلب",
-            "es": "Sahlep",
-            "de": "Sahlep"
-          },
-          "aciklama": {
-            "tr": "Geleneksel sicak sahlep",
-            "en": "Traditional hot sahlep",
-            "ar": "سحلب ساخن تقليدي",
-            "es": "Sahlep caliente tradicional",
-            "de": "Traditioneller heißer Sahlep"
-          },
-          "fiyat": "45,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/sahlep.png"
-        },
-        {
-          "isim": {
-            "tr": "Mihrima Sultan Sutlu",
-            "en": "Mihrima Sultan with Milk",
-            "ar": "محريمة سلطان بالحليب",
-            "es": "Mihrima Sultan con Leche",
-            "de": "Mihrima Sultan mit Milch"
-          },
-          "aciklama": {
-            "tr": "Ozel tarifle hazirlanmis",
-            "en": "Prepared with special recipe",
-            "ar": "محضر بوصفة خاصة",
-            "es": "Preparado con receta especial",
-            "de": "Mit speziellem Rezept zubereitet"
-          },
-          "fiyat": "50,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/mihrimasultansutlu.png"
-        }
-      ]
-    },
-    {
-      "id": "soguk-icecekler",
-      "isim": {
-        "tr": "Soguk Icecekler",
-        "en": "Cold Beverages",
-        "ar": "المشروبات الباردة",
-        "es": "Bebidas Frías",
-        "de": "Kalte Getränke"
-      },
-      "icon": "🥤",
-      "renk": "#4A90E2",
-      "urunler": [
-        {
-          "isim": {
-            "tr": "Kola",
-            "en": "Cola",
-            "ar": "كولا",
-            "es": "Cola",
-            "de": "Cola"
-          },
-          "aciklama": {
-            "tr": "Coca Cola 330ml",
-            "en": "Coca Cola 330ml",
-            "ar": "كوكا كولا 330 مل",
-            "es": "Coca Cola 330ml",
-            "de": "Coca Cola 330ml"
-          },
-          "fiyat": "35,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/kola.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Fanta",
-            "en": "Fanta",
-            "ar": "فانتا",
-            "es": "Fanta",
-            "de": "Fanta"
-          },
-          "aciklama": {
-            "tr": "Fanta 330ml",
-            "en": "Fanta 330ml",
-            "ar": "فانتا 330 مل",
-            "es": "Fanta 330ml",
-            "de": "Fanta 330ml"
-          },
-          "fiyat": "35,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/fanta.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Sprite",
-            "en": "Sprite",
-            "ar": "سبرايت",
-            "es": "Sprite",
-            "de": "Sprite"
-          },
-          "aciklama": {
-            "tr": "Sprite 330ml",
-            "en": "Sprite 330ml",
-            "ar": "سبرايت 330 مل",
-            "es": "Sprite 330ml",
-            "de": "Sprite 330ml"
-          },
-          "fiyat": "35,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/sprite.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Churchill",
-            "en": "Churchill",
-            "ar": "تشرشل",
-            "es": "Churchill",
-            "de": "Churchill"
-          },
-          "aciklama": {
-            "tr": "Churchill 330ml",
-            "en": "Churchill 330ml",
-            "ar": "تشرشل 330 مل",
-            "es": "Churchill 330ml",
-            "de": "Churchill 330ml"
-          },
-          "fiyat": "40,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/churchill.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Red Bull",
-            "en": "Red Bull",
-            "ar": "ريد بُل",
-            "es": "Red Bull",
-            "de": "Red Bull"
-          },
-          "aciklama": {
-            "tr": "Red Bull enerji icecegi 250ml",
-            "en": "Red Bull energy drink 250ml",
-            "ar": "مشروب ريد بُل للطاقة 250 مل",
-            "es": "Bebida energética Red Bull 250ml",
-            "de": "Red Bull Energy-Drink 250ml"
-          },
-          "fiyat": "60,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/redbul.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Ayran Soda",
-            "en": "Ayran Soda",
-            "ar": "عيران صودا",
-            "es": "Ayran Soda",
-            "de": "Ayran Soda"
-          },
-          "aciklama": {
-            "tr": "Meyveli ayran soda",
-            "en": "Fruity ayran soda",
-            "ar": "عيران صودا بالفواكه",
-            "es": "Ayran soda con frutas",
-            "de": "Fruchtiger Ayran-Soda"
-          },
-          "fiyat": "40,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/ayransoda.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Meyveli Soda",
-            "en": "Fruit Soda",
-            "ar": "صودا الفواكه",
-            "es": "Soda de Frutas",
-            "de": "Frucht-Soda"
-          },
-          "aciklama": {
-            "tr": "Cesitli meyve aromali soda",
-            "en": "Various fruit flavored soda",
-            "ar": "صودا بنكهات فواكه متنوعة",
-            "es": "Soda con varios sabores de frutas",
-            "de": "Soda mit verschiedenen Fruchtgeschmäckern"
-          },
-          "fiyat": "35,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/meyvelisoda.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Seftali Suyu",
-            "en": "Peach Juice",
-            "ar": "عصير الخوخ",
-            "es": "Jugo de Durazno",
-            "de": "Pfirsichsaft"
-          },
-          "aciklama": {
-            "tr": "Dogal seftali suyu",
-            "en": "Natural peach juice",
-            "ar": "عصير خوخ طبيعي",
-            "es": "Jugo natural de durazno",
-            "de": "Natürlicher Pfirsichsaft"
-          },
-          "fiyat": "40,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/şeftalisuyu.webp"
-        },
-        {
-          "isim": {
-            "tr": "Visne Suyu",
-            "en": "Sour Cherry Juice",
-            "ar": "عصير الكرز الحامض",
-            "es": "Jugo de Cereza Ácida",
-            "de": "Sauerkirschsaft"
-          },
-          "aciklama": {
-            "tr": "Dogal visne suyu",
-            "en": "Natural sour cherry juice",
-            "ar": "عصير كرز حامض طبيعي",
-            "es": "Jugo natural de cereza ácida",
-            "de": "Natürlicher Sauerkirschsaft"
-          },
-          "fiyat": "40,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/meysu-meyve-visne-200.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Su",
-            "en": "Water",
-            "ar": "ماء",
-            "es": "Agua",
-            "de": "Wasser"
-          },
-          "aciklama": {
-            "tr": "500ml pet sise",
-            "en": "500ml pet bottle",
-            "ar": "زجاجة بلاستيكية 500 مل",
-            "es": "Botella PET de 500ml",
-            "de": "500ml PET-Flasche"
-          },
-          "fiyat": "10,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/su.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "tatlilar",
-      "isim": {
-        "tr": "Tatlilar",
-        "en": "Desserts",
-        "ar": "الحلويات",
-        "es": "Postres",
-        "de": "Desserts"
-      },
-      "icon": "🍰",
-      "renk": "#E91E63",
-      "urunler": [
-        {
-          "isim": {
-            "tr": "Trilece",
-            "en": "Tres Leches",
-            "ar": "تريليتشا",
-            "es": "Tres Leches",
-            "de": "Tres Leches"
-          },
-          "aciklama": {
-            "tr": "Sutlu trilece tatlisi",
-            "en": "Milky tres leches dessert",
-            "ar": "حلوى تريليتشا بالحليب",
-            "es": "Postre de tres leches",
-            "de": "Milchiges Tres-Leches-Dessert"
-          },
-          "fiyat": "75,00 TL",
-          "gorsel": "image/tatlılar/trilece.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Profiterol",
-            "en": "Profiterole",
-            "ar": "بروفيترول",
-            "es": "Profiterol",
-            "de": "Profiteroles"
-          },
-          "aciklama": {
-            "tr": "Cikolatali profiterol",
-            "en": "Chocolate profiterole",
-            "ar": "بروفيترول بالشوكولاتة",
-            "es": "Profiterol con chocolate",
-            "de": "Schokoladen-Profiteroles"
-          },
-          "fiyat": "80,00 TL",
-          "gorsel": "image/tatlılar/profiterol.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Firin Sutlac",
-            "en": "Baked Rice Pudding",
-            "ar": "أرز بالحليب مخبوز",
-            "es": "Arroz con Leche al Horno",
-            "de": "Gebackener Milchreis"
-          },
-          "aciklama": {
-            "tr": "Geleneksel firin sutlac",
-            "en": "Traditional baked rice pudding",
-            "ar": "أرز بالحليب مخبوز تقليدي",
-            "es": "Arroz con leche al horno tradicional",
-            "de": "Traditioneller gebackener Milchreis"
-          },
-          "fiyat": "65,00 TL",
-          "gorsel": "image/tatlılar/firinsutlac.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Kazandibi",
-            "en": "Kazandibi",
-            "ar": "قازان ديبي",
-            "es": "Kazandibi",
-            "de": "Kazandibi"
-          },
-          "aciklama": {
-            "tr": "Ozel tarifle kazandibi",
-            "en": "Special recipe kazandibi",
-            "ar": "قازان ديبي بوصفة خاصة",
-            "es": "Kazandibi con receta especial",
-            "de": "Kazandibi nach speziellem Rezept"
-          },
-          "fiyat": "70,00 TL",
-          "gorsel": "image/tatlılar/kazandibi.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Tavuk Gogsu",
-            "en": "Chicken Breast Pudding",
-            "ar": "حلوى صدر الدجاج",
-            "es": "Pudín de Pechuga de Pollo",
-            "de": "Hühnerbrust-Pudding"
-          },
-          "aciklama": {
-            "tr": "Geleneksel tavuk gogsu",
-            "en": "Traditional chicken breast pudding",
-            "ar": "حلوى صدر الدجاج التقليدية",
-            "es": "Pudín de pechuga de pollo tradicional",
-            "de": "Traditioneller Hühnerbrust-Pudding"
-          },
-          "fiyat": "70,00 TL",
-          "gorsel": "image/tatlılar/tavukgogsu.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Keskul",
-            "en": "Keskul",
-            "ar": "كشكل",
-            "es": "Keskul",
-            "de": "Keskul"
-          },
-          "aciklama": {
-            "tr": "Hindistan cevizli keskul",
-            "en": "Coconut keskul",
-            "ar": "كشكل بجوز الهند",
-            "es": "Keskul con coco",
-            "de": "Keskul mit Kokosnuss"
-          },
-          "fiyat": "65,00 TL",
-          "gorsel": "image/tatlılar/keskul.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Meyve Tabagi",
-            "en": "Fruit Plate",
-            "ar": "طبق الفواكه",
-            "es": "Plato de Frutas",
-            "de": "Obstteller"
-          },
-          "aciklama": {
-            "tr": "Taze mevsim meyveleri",
-            "en": "Fresh seasonal fruits",
-            "ar": "فواكه موسمية طازجة",
-            "es": "Frutas frescas de temporada",
-            "de": "Frische saisonale Früchte"
-          },
-          "fiyat": "85,00 TL",
-          "gorsel": "image/tatlılar/meyve.jpg"
-        }
-      ]
-    },
-    {
-      "id": "nargileler",
-      "isim": {
-        "tr": "Nargileler",
-        "en": "Hookah",
-        "ar": "الشيشة",
-        "es": "Narguile",
-        "de": "Wasserpfeife"
-      },
-      "icon": "💨",
-      "renk": "#1E3A5F",
-      "urunler": [
-        {
-          "isim": {
-            "tr": "Aromali Nargile",
-            "en": "Flavored Hookah",
-            "ar": "شيشة بالنكهات",
-            "es": "Narguile con Sabor",
-            "de": "Aromatisierte Wasserpfeife"
-          },
-          "aciklama": {
-            "tr": "Cesitli aromalar (Elma, Uzum, Seftali, Kavun, Karpuz)",
-            "en": "Various flavors (Apple, Grape, Peach, Melon, Watermelon)",
-            "ar": "نكهات متنوعة (تفاح، عنب، خوخ، شمام، بطيخ)",
-            "es": "Varios sabores (Manzana, Uva, Durazno, Melón, Sandía)",
-            "de": "Verschiedene Geschmacksrichtungen (Apfel, Traube, Pfirsich, Melone, Wassermelone)"
-          },
-          "fiyat": "350,00 TL",
-          "gorsel": "image/nargileler/nargile_aromalılar.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Tombeki Nargile",
-            "en": "Tombeki Hookah",
-            "ar": "شيشة تومبكي",
-            "es": "Narguile Tombeki",
-            "de": "Tombeki Wasserpfeife"
-          },
-          "aciklama": {
-            "tr": "Geleneksel tombeki nargile",
-            "en": "Traditional tombeki hookah",
-            "ar": "شيشة تومبكي تقليدية",
-            "es": "Narguile tombeki tradicional",
-            "de": "Traditionelle Tombeki-Wasserpfeife"
-          },
-          "fiyat": "350,00 TL",
-          "gorsel": "image/nargileler/tömbeki_nargile.jpg"
-        }
-      ]
-    },
-    {
-      "id": "masa-sarji",
-      "isim": {
-        "tr": "Masa Sarji",
-        "en": "Table Charging",
-        "ar": "شحن الطاولة",
-        "es": "Carga de Mesa",
-        "de": "Tisch-Aufladung"
-      },
-      "icon": "🔌",
-      "renk": "#FF6B35",
-      "urunler": [
-        {
-          "isim": {
-            "tr": "Masa Sarji Hizmeti",
-            "en": "Table Charging Service",
-            "ar": "خدمة شحن الطاولة",
-            "es": "Servicio de Carga en Mesa",
-            "de": "Tisch-Ladedienst"
-          },
-          "aciklama": {
-            "tr": "Masanizda telefon sarj imkani, her jeton 30 dakika sürer",
-            "en": "Phone charging at your table, each token lasts 30 minutes",
-            "ar": "شحن الهاتف على طاولتك، كل عملة تستمر 30 دقيقة",
-            "es": "Carga de teléfono en tu mesa, cada ficha dura 30 minutos",
-            "de": "Telefon-Aufladung an Ihrem Tisch, jeder Token dauert 30 Minuten"
-          },
-          "fiyat": "30,00 TL",
-          "gorsel": "image/masa şarjı/masaşarjı.jpeg"
         }
       ]
     }

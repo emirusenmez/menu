@@ -120,7 +120,7 @@
             "es": "Tostado con salchicha sujuk",
             "de": "Toast mit Sucuk-Wurst"
           },
-          "fiyat": "140,00 TL",
+          "fiyat": "150,00 TL",
           "gorsel": "image/tostlar/sucuklutost.png"
         },
         {
@@ -156,7 +156,7 @@
             "es": "Tostado con sujuk y queso kashar",
             "de": "Toast mit Sucuk und Kashkaval-Käse"
           },
-          "fiyat": "160,00 TL",
+          "fiyat": "140,00 TL",
           "gorsel": "image/tostlar/sucuklutost.png"
         },
         {
@@ -174,7 +174,7 @@
             "es": "Tostado con carne asada y queso",
             "de": "Toast mit gebratenem Fleisch und Käse"
           },
-          "fiyat": "200,00 TL",
+          "fiyat": "220,00 TL",
           "gorsel": "image/tostlar/kavurmalitost.jpeg"
         }
       ]
@@ -279,7 +279,7 @@
             "de": "Urfa Kebab im Lavash-Brot"
           },
           "fiyat": "250,00 TL",
-          "gorsel": "image/yemekler/urfadurum.jpg"
+          "gorsel": "image/yemekler/urfa1.jpg"
         },
         {
           "isim": {
@@ -297,7 +297,7 @@
             "de": "Gegrillte Köfte mit Reis und Salat"
           },
           "fiyat": "350,00 TL",
-          "gorsel": "image/yemekler/porsiyon köfte.jpg"
+          "gorsel": "image/yemekler/porsiyonkofte.jpg"
         },
         {
           "isim": {
@@ -315,7 +315,7 @@
             "de": "Gegrillte Köfte in frischem Brot"
           },
           "fiyat": "200,00 TL",
-          "gorsel": "image/yemekler/ekmek_arası_kofte.jpg"
+          "gorsel": "image/yemekler/ekmek_arasi_kofte.jpg"
         },
         {
           "isim": {
@@ -401,7 +401,7 @@
             "de": "Traditioneller türkischer Kaffee"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/turkkahvesi.png"
+          "gorsel": "image/Icecekler/sicak-icecekler/turkkahvesi.png"
         },
         {
           "isim": {
@@ -419,7 +419,7 @@
             "de": "Einzelner Espresso"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/461-singleespresso.jpg"
+          "gorsel": "image/kahveler/sicak-kahveler/461-singleespresso.jpg"
         },
         {
           "isim": {
@@ -437,7 +437,7 @@
             "de": "Filterkaffee-Geschmack"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/126-americano2.png"
+          "gorsel": "image/kahveler/sicak-kahveler/126-americano2.png"
         },
         {
           "isim": {
@@ -455,7 +455,7 @@
             "de": "Espresso mit Milch"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/976-cafelatte.png"
+          "gorsel": "image/kahveler/sicak-kahveler/976-cafelatte.png"
         },
         {
           "isim": {
@@ -473,7 +473,7 @@
             "de": "Espresso mit Milchschaum"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/908-espressomacchiato.jpg"
+          "gorsel": "image/kahveler/sicak-kahveler/908-espressomacchiato.jpg"
         },
         {
           "isim": {
@@ -491,7 +491,7 @@
             "de": "Mocha mit weißer Schokolade"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/138-whitechocolatemocha.jpg"
+          "gorsel": "image/kahveler/sicak-kahveler/138-whitechocolatemocha.jpg"
         },
         {
           "isim": {
@@ -509,7 +509,7 @@
             "de": "Purer Instantkaffee"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/855-nescafesade.jpg"
+          "gorsel": "image/kahveler/sicak-kahveler/855-nescafesade.jpg"
         },
         {
           "isim": {
@@ -527,7 +527,7 @@
             "de": "Instantkaffee mit Milch"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/kahveler/sıcak kahveler/358-nescafesutlu.jpg"
+          "gorsel": "image/kahveler/sicak-kahveler/358-nescafesutlu.jpg"
         },
         {
           "isim": {
@@ -545,7 +545,7 @@
             "de": "Eisgekühlter Espresso mit Milch"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/kahveler/soğuk kahveler/435-icelatte.jpg"
+          "gorsel": "image/kahveler/soguk-kahveler/435-icelatte.jpg"
         },
         {
           "isim": {
@@ -563,7 +563,7 @@
             "de": "Eisgekühlter Americano"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/kahveler/soğuk kahveler/788-iceamericano.jpg"
+          "gorsel": "image/kahveler/soguk-kahveler/788-iceamericano.jpg"
         },
         {
           "isim": {
@@ -581,7 +581,7 @@
             "de": "Eisgekühlter Karamell-Macchiato"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/kahveler/soğuk kahveler/981-icecaramelmacchiato.jpg"
+          "gorsel": "image/kahveler/soguk-kahveler/981-icecaramelmacchiato.jpg"
         }
       ]
     },
@@ -613,7 +613,7 @@
             "de": "Tee aus der Kanne"
           },
           "fiyat": "25,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/cay.jpg"
+          "gorsel": "image/Icecekler/sicak-icecekler/cay.jpg"
         },
         {
           "isim": {
@@ -631,7 +631,7 @@
             "de": "Teebeutel"
           },
           "fiyat": "50,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/fincancay.png"
+          "gorsel": "image/Icecekler/sicak-icecekler/fincancay.png"
         },
         {
           "isim": {
@@ -649,7 +649,7 @@
             "de": "Verschiedene Kräutertees"
           },
           "fiyat": "50,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/bitkicaylari.jpg"
+          "gorsel": "image/Icecekler/sicak-icecekler/bitkicaylari.jpg"
         },
         {
           "isim": {
@@ -667,7 +667,7 @@
             "de": "Traditioneller heißer Sahlep"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/sahlep.png"
+          "gorsel": "image/Icecekler/sicak-icecekler/sahlep.png"
         },
         {
           "isim": {
@@ -685,7 +685,7 @@
             "de": "Mit speziellem Rezept zubereitet"
           },
           "fiyat": "100,00 TL",
-          "gorsel": "image/Icecekler/sıcak içecekler/mihrimasultansutlu.png"
+          "gorsel": "image/Icecekler/sicak-icecekler/mihrimasultansutlu.png"
         }
       ]
     },
@@ -717,7 +717,7 @@
             "de": "Coca Cola 330ml"
           },
           "fiyat": "70,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/kola.jpg"
+          "gorsel": "image/Icecekler/soguk-icecekler/kola.jpg"
         },
         {
           "isim": {
@@ -735,7 +735,7 @@
             "de": "Fanta 330ml"
           },
           "fiyat": "70,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/fanta.jpg"
+          "gorsel": "image/Icecekler/soguk-icecekler/fanta.jpg"
         },
         {
           "isim": {
@@ -753,7 +753,7 @@
             "de": "Sprite 330ml"
           },
           "fiyat": "70,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/sprite.jpg"
+          "gorsel": "image/Icecekler/soguk-icecekler/sprite.jpg"
         },
         {
           "isim": {
@@ -771,7 +771,7 @@
             "de": "Churchill 330ml"
           },
           "fiyat": "50,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/churchill.jpg"
+          "gorsel": "image/Icecekler/soguk-icecekler/churchill.jpg"
         },
         {
           "isim": {
@@ -789,7 +789,7 @@
             "de": "Red Bull Energy-Drink 250ml"
           },
           "fiyat": "120,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/redbul.jpg"
+          "gorsel": "image/Icecekler/soguk-icecekler/redbul.jpg"
         },
         {
           "isim": {
@@ -807,7 +807,7 @@
             "de": "Fruchtiger Ayran-Soda"
           },
           "fiyat": "35,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/ayransoda.jpg"
+          "gorsel": "image/Icecekler/soguk-icecekler/ayransoda.jpg"
         },
         {
           "isim": {
@@ -825,7 +825,7 @@
             "de": "Soda mit verschiedenen Fruchtgeschmäckern"
           },
           "fiyat": "40,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/meyvelisoda.jpg"
+          "gorsel": "image/Icecekler/soguk-icecekler/meyvelisoda.jpg"
         },
         {
           "isim": {
@@ -843,7 +843,7 @@
             "de": "Natürlicher Pfirsichsaft"
           },
           "fiyat": "70,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/şeftalisuyu.webp"
+          "gorsel": "image/Icecekler/soguk-icecekler/seftalisuyu.webp"
         },
         {
           "isim": {
@@ -861,7 +861,7 @@
             "de": "Natürlicher Sauerkirschsaft"
           },
           "fiyat": "70,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/meysu-meyve-visne-200.jpg"
+          "gorsel": "image/Icecekler/soguk-icecekler/meysu-meyve-visne-200.jpg"
         },
         {
           "isim": {
@@ -879,7 +879,7 @@
             "de": "500ml PET-Flasche"
           },
           "fiyat": "25,00 TL",
-          "gorsel": "image/Icecekler/soguk içecekler/su.jpeg"
+          "gorsel": "image/Icecekler/soguk-icecekler/su.jpeg"
         }
       ]
     },
@@ -911,7 +911,7 @@
             "de": "Milchiges Tres-Leches-Dessert"
           },
           "fiyat": "130,00 TL",
-          "gorsel": "image/tatlılar/trilece.jpg"
+          "gorsel": "image/tatlilar/trilece.jpg"
         },
         {
           "isim": {
@@ -929,7 +929,7 @@
             "de": "Schokoladen-Profiteroles"
           },
           "fiyat": "130,00 TL",
-          "gorsel": "image/tatlılar/profiterol.jpg"
+          "gorsel": "image/tatlilar/profiterol.jpg"
         },
         {
           "isim": {
@@ -947,7 +947,7 @@
             "de": "Traditioneller gebackener Milchreis"
           },
           "fiyat": "130,00 TL",
-          "gorsel": "image/tatlılar/firinsutlac.jpg"
+          "gorsel": "image/tatlilar/firinsutlac.jpg"
         },
         {
           "isim": {
@@ -965,7 +965,7 @@
             "de": "Kazandibi nach speziellem Rezept"
           },
           "fiyat": "130,00 TL",
-          "gorsel": "image/tatlılar/kazandibi.jpg"
+          "gorsel": "image/tatlilar/kazandibi.jpg"
         },
         {
           "isim": {
@@ -983,7 +983,7 @@
             "de": "Keskul mit Kokosnuss"
           },
           "fiyat": "130,00 TL",
-          "gorsel": "image/tatlılar/keskul.jpg"
+          "gorsel": "image/tatlilar/keskul.jpg"
         },
         {
           "isim": {
@@ -1001,7 +1001,7 @@
             "de": "Frische saisonale Früchte"
           },
           "fiyat": "130,00 TL",
-          "gorsel": "image/tatlılar/meyve.jpg"
+          "gorsel": "image/tatlilar/meyve.jpg"
         },
         {
           "isim": {
@@ -1019,7 +1019,7 @@
             "de": "Verschiedene Magnolia-Desserts"
           },
           "fiyat": "130,00 TL",
-          "gorsel": "image/tatlılar/magnolya.jpg"
+          "gorsel": "image/tatlilar/magnolya.jpg"
         }
       ]
     },
@@ -1051,7 +1051,7 @@
             "de": "Verschiedene Geschmacksrichtungen (Apfel, Traube, Pfirsich, Melone, Wassermelone)"
           },
           "fiyat": "350,00 TL",
-          "gorsel": "image/nargileler/nargile_aromalılar.jpg"
+          "gorsel": "image/nargileler/nargile_aromalilar.jpg"
         },
         {
           "isim": {
@@ -1069,7 +1069,7 @@
             "de": "Traditionelle Tombeki-Wasserpfeife"
           },
           "fiyat": "350,00 TL",
-          "gorsel": "image/nargileler/tömbeki_nargile.jpg"
+          "gorsel": "image/nargileler/tombeki_nargile.jpg"
         }
       ]
     },
@@ -1101,7 +1101,7 @@
             "de": "Telefon-Aufladung an Ihrem Tisch, jeder Token dauert 30 Minuten"
           },
           "fiyat": "30,00 TL",
-          "gorsel": "image/masa şarjı/masaşarjı.jpeg"
+          "gorsel": "image/masa-sarji/masasarji.jpeg"
         }
       ]
     }

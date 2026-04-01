@@ -211,6 +211,25 @@
         },
         {
           "isim": {
+            "tr": "Kokorec",
+            "en": "Kokorec",
+            "ar": "كوكوريتش",
+            "es": "Kokorec",
+            "de": "Kokorec"
+          },
+          "aciklama": {
+            "tr": "Kokorec porsiyon",
+            "en": "Grilled kokorec portion",
+            "ar": "حصة كوكوريتش مشوي",
+            "es": "Porción de kokorec a la parrilla",
+            "de": "Gegrillte Kokorec-Portion"
+          },
+          "fiyat": "300,00 TL",
+          "gorsel": "image/hamburgerler/kokorec.png"
+        },
+        {
+          "gizli": true,
+          "isim": {
             "tr": "Adana Kebap Porsiyon",
             "en": "Adana Kebab Plate",
             "ar": "طبق كباب أضنة",
@@ -228,6 +247,7 @@
           "gorsel": "image/yemekler/adana_porsiyon.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Adana Durum",
             "en": "Adana Wrap",
@@ -246,6 +266,7 @@
           "gorsel": "image/yemekler/adanadurum.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Urfa Kebap Porsiyon",
             "en": "Urfa Kebab Plate",
@@ -264,6 +285,7 @@
           "gorsel": "image/yemekler/urfa-kebap-porsiyon.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Urfa Durum",
             "en": "Urfa Wrap",
@@ -1366,6 +1388,56 @@
           },
           "fiyat": "90,00 TL",
           "gorsel": "image/makarnalar/spagettinapolitan.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hamburgerler",
+      "isim": {
+        "tr": "Hamburgerler",
+        "en": "Burgers",
+        "ar": "برغر",
+        "es": "Hamburguesas",
+        "de": "Burger"
+      },
+      "icon": "🍔",
+      "renk": "#D35400",
+      "urunler": [
+        {
+          "isim": {
+            "tr": "Tavuk Burger",
+            "en": "Chicken Burger",
+            "ar": "برغر دجاج",
+            "es": "Hamburguesa de Pollo",
+            "de": "Chicken Burger"
+          },
+          "aciklama": {
+            "tr": "Tavuk burger",
+            "en": "Chicken burger",
+            "ar": "برغر دجاج",
+            "es": "Hamburguesa de pollo",
+            "de": "Hähnchen-Burger"
+          },
+          "fiyat": "250,00 TL",
+          "gorsel": "image/hamburgerler/tavukburger.jpeg"
+        },
+        {
+          "isim": {
+            "tr": "Hamburger",
+            "en": "Hamburger",
+            "ar": "همبرغر",
+            "es": "Hamburguesa",
+            "de": "Hamburger"
+          },
+          "aciklama": {
+            "tr": "Hamburger",
+            "en": "Hamburger",
+            "ar": "همبرغر",
+            "es": "Hamburguesa",
+            "de": "Hamburger"
+          },
+          "fiyat": "300,00 TL",
+          "gorsel": "image/hamburgerler/hamburger.png"
         }
       ]
     }

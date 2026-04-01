@@ -782,7 +782,7 @@
 
                 // Tum urunleri duz liste yap (arama icin)
                 menuData.kategoriler.forEach(kat => {
-                    kat.urunler.forEach(urun => {
+                    kat.urunler.filter(u => !u.gizli).forEach(urun => {
                         allProducts.push({
                             ...urun,
                             kategoriId: kat.id,
@@ -875,9 +875,9 @@
 
             // Slider arka plan görselleri
             const sliderImages = [
-                'image/yemekler/adana_porsiyon.jpg',
-                'image/tatlılar/profiterol.jpg',
-                'image/kahveler/sıcak kahveler/976-cafelatte.png'
+                'image/hamburgerler/hamburger.png',
+                'image/tatlilar/profiterol.jpg',
+                'image/kahveler/sicak-kahveler/976-cafelatte.png'
             ];
 
             slider.innerHTML = menuData.slider.map((slide, i) => `
@@ -912,7 +912,7 @@
             // Her kategori için temsili görsel
             const categoryImages = {
                 'tost-cesitleri': 'image/tostlar/sucuklutost.png',
-                'yemekler': 'image/yemekler/adana_porsiyon.jpg',
+                'yemekler': 'image/hamburgerler/kokorec.png',
                 'aperatifler': 'image/aperatifler/tavukburger.jpg',
                 'makarnalar': 'image/makarnalar/fettuccinealfredo.jpg',
                 'kahveler': 'image/kahveler/sicak-kahveler/976-cafelatte.png',
@@ -920,7 +920,8 @@
                 'soguk-icecekler': 'image/Icecekler/soguk-icecekler/kola.jpg',
                 'tatlilar': 'image/tatlilar/profiterol.jpg',
                 'nargileler': 'image/nargileler/nargile_aromalilar.jpg',
-                'masa-sarji': 'image/masa şarjı/masaşarjı.jpeg'
+                'masa-sarji': 'image/masa-sarji/masasarji.jpeg',
+                'hamburgerler': 'image/hamburgerler/hamburger.png'
             };
 
             grid.innerHTML = menuData.kategoriler.map(kat => `
@@ -963,7 +964,7 @@
                     <div class="menu-category-header">
                         <span>${kat.icon}</span> ${kat.isim[currentLang]}
                     </div>
-                    ${kat.urunler.map((urun, idx) => `
+                    ${kat.urunler.filter(u => !u.gizli).map((urun, idx) => `
                         <div class="product-card" onclick='openProductDetail(${JSON.stringify(urun).replace(/'/g, "&#39;")})'>
                             <div class="product-info">
                                 <div class="product-name">${urun.isim[currentLang]}</div>

@@ -318,7 +318,7 @@
             "es": "Albóndigas a la parrilla con arroz y ensalada",
             "de": "Gegrillte Köfte mit Reis und Salat"
           },
-          "fiyat": "350,00 TL",
+          "fiyat": "380,00 TL",
           "gorsel": "image/yemekler/porsiyonkofte.jpg"
         },
         {
@@ -336,8 +336,62 @@
             "es": "Albóndigas a la parrilla en pan fresco",
             "de": "Gegrillte Köfte in frischem Brot"
           },
-          "fiyat": "200,00 TL",
+          "fiyat": "230,00 TL",
           "gorsel": "image/yemekler/ekmek_arasi_kofte.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Tavuk Porsiyon",
+            "en": "Chicken Plate",
+            "ar": "طبق دجاج",
+            "es": "Plato de Pollo",
+            "de": "Hähnchen Teller"
+          },
+          "aciklama": {
+            "tr": "Tavuk porsiyon, pilav ve salata ile",
+            "en": "Chicken plate with rice and salad",
+            "ar": "طبق دجاج مع الأرز والسلطة",
+            "es": "Plato de pollo con arroz y ensalada",
+            "de": "Hähnchenteller mit Reis und Salat"
+          },
+          "fiyat": "350,00 TL",
+          "gorsel": "image/yemekler/tavuk_sis_porsiyon.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Tavuk Ekmek Arasi",
+            "en": "Chicken Sandwich",
+            "ar": "ساندويتش دجاج",
+            "es": "Sándwich de Pollo",
+            "de": "Hähnchen-Sandwich"
+          },
+          "aciklama": {
+            "tr": "Ekmek arasinda tavuk",
+            "en": "Chicken in bread",
+            "ar": "دجاج في الخبز",
+            "es": "Pollo en pan",
+            "de": "Hähnchen im Brot"
+          },
+          "fiyat": "200,00 TL",
+          "gorsel": "image/yemekler/tavuksisdurum.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Piyaz",
+            "en": "White Bean Salad",
+            "ar": "سلطة الفاصوليا البيضاء",
+            "es": "Ensalada de Alubias",
+            "de": "Weiße Bohnen Salat"
+          },
+          "aciklama": {
+            "tr": "Geleneksel piyaz",
+            "en": "Traditional white bean salad",
+            "ar": "سلطة الفاصوليا البيضاء التقليدية",
+            "es": "Ensalada tradicional de alubias blancas",
+            "de": "Traditioneller weißer Bohnensalat"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/yemekler/piyaz.png"
         }
       ]
     },
@@ -368,7 +422,7 @@
             "es": "Hamburguesa de pollo",
             "de": "Hähnchen-Burger"
           },
-          "fiyat": "250,00 TL",
+          "fiyat": "200,00 TL",
           "gorsel": "image/hamburgerler/tavukburger.jpeg"
         },
         {
@@ -386,7 +440,7 @@
             "es": "Hamburguesa",
             "de": "Hamburger"
           },
-          "fiyat": "300,00 TL",
+          "fiyat": "250,00 TL",
           "gorsel": "image/hamburgerler/hamburger.png"
         }
       ]

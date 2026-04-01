@@ -409,36 +409,36 @@
       "urunler": [
         {
           "isim": {
-            "tr": "Tavuk Burger",
-            "en": "Chicken Burger",
-            "ar": "برغر دجاج",
-            "es": "Hamburguesa de Pollo",
-            "de": "Chicken Burger"
+            "tr": "Citir Tavuk Burger",
+            "en": "Crispy Chicken Burger",
+            "ar": "برغر دجاج مقرمش",
+            "es": "Hamburguesa de Pollo Crujiente",
+            "de": "Crispy Chicken Burger"
           },
           "aciklama": {
-            "tr": "Tavuk burger",
-            "en": "Chicken burger",
-            "ar": "برغر دجاج",
-            "es": "Hamburguesa de pollo",
-            "de": "Hähnchen-Burger"
+            "tr": "Citir tavuk burger",
+            "en": "Crispy chicken burger",
+            "ar": "برغر دجاج مقرمش",
+            "es": "Hamburguesa de pollo crujiente",
+            "de": "Crispy Chicken Burger"
           },
           "fiyat": "200,00 TL",
           "gorsel": "image/hamburgerler/tavukburger.jpeg"
         },
         {
           "isim": {
-            "tr": "Hamburger",
-            "en": "Hamburger",
-            "ar": "همبرغر",
-            "es": "Hamburguesa",
-            "de": "Hamburger"
+            "tr": "Kofte Burger",
+            "en": "Meatball Burger",
+            "ar": "برغر كفتة",
+            "es": "Hamburguesa de Albóndiga",
+            "de": "Köfte Burger"
           },
           "aciklama": {
-            "tr": "Hamburger",
-            "en": "Hamburger",
-            "ar": "همبرغر",
-            "es": "Hamburguesa",
-            "de": "Hamburger"
+            "tr": "Kofte burger",
+            "en": "Meatball burger",
+            "ar": "برغر كفتة",
+            "es": "Hamburguesa de albóndiga",
+            "de": "Köfte Burger"
           },
           "fiyat": "250,00 TL",
           "gorsel": "image/hamburgerler/hamburger.png"

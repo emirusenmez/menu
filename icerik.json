@@ -338,60 +338,56 @@
           },
           "fiyat": "200,00 TL",
           "gorsel": "image/yemekler/ekmek_arasi_kofte.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hamburgerler",
+      "isim": {
+        "tr": "Hamburgerler",
+        "en": "Burgers",
+        "ar": "برغر",
+        "es": "Hamburguesas",
+        "de": "Burger"
+      },
+      "icon": "🍔",
+      "renk": "#D35400",
+      "urunler": [
+        {
+          "isim": {
+            "tr": "Tavuk Burger",
+            "en": "Chicken Burger",
+            "ar": "برغر دجاج",
+            "es": "Hamburguesa de Pollo",
+            "de": "Chicken Burger"
+          },
+          "aciklama": {
+            "tr": "Tavuk burger",
+            "en": "Chicken burger",
+            "ar": "برغر دجاج",
+            "es": "Hamburguesa de pollo",
+            "de": "Hähnchen-Burger"
+          },
+          "fiyat": "250,00 TL",
+          "gorsel": "image/hamburgerler/tavukburger.jpeg"
         },
         {
           "isim": {
-            "tr": "Tavuk Sis Porsiyon",
-            "en": "Chicken Skewer Plate",
-            "ar": "طبق شيش الدجاج",
-            "es": "Plato de Brochetas de Pollo",
-            "de": "Hähnchen-Spieß Teller"
+            "tr": "Hamburger",
+            "en": "Hamburger",
+            "ar": "همبرغر",
+            "es": "Hamburguesa",
+            "de": "Hamburger"
           },
           "aciklama": {
-            "tr": "Marine edilmis tavuk sis, pilav ve salata ile",
-            "en": "Marinated chicken skewers with rice and salad",
-            "ar": "شيش دجاج متبل مع الأرز والسلطة",
-            "es": "Brochetas de pollo marinadas con arroz y ensalada",
-            "de": "Marinierte Hähnchenspieße mit Reis und Salat"
+            "tr": "Hamburger",
+            "en": "Hamburger",
+            "ar": "همبرغر",
+            "es": "Hamburguesa",
+            "de": "Hamburger"
           },
-          "fiyat": "350,00 TL",
-          "gorsel": "image/yemekler/tavuk_sis_porsiyon.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Tavuk Sis Durum",
-            "en": "Chicken Skewer Wrap",
-            "ar": "لفة شيش الدجاج",
-            "es": "Wrap de Brochetas de Pollo",
-            "de": "Hähnchen-Spieß Wrap"
-          },
-          "aciklama": {
-            "tr": "Lavas ekmeğinde tavuk sis",
-            "en": "Chicken skewers in lavash bread",
-            "ar": "شيش دجاج في خبز لافاش",
-            "es": "Brochetas de pollo en pan lavash",
-            "de": "Hähnchenspieße im Lavash-Brot"
-          },
-          "fiyat": "200,00 TL",
-          "gorsel": "image/yemekler/tavuksisdurum.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Piyaz",
-            "en": "White Bean Salad",
-            "ar": "سلطة الفاصوليا البيضاء",
-            "es": "Ensalada de Alubias",
-            "de": "Weiße Bohnen Salat"
-          },
-          "aciklama": {
-            "tr": "Geleneksel piyaz salatasi",
-            "en": "Traditional white bean salad",
-            "ar": "سلطة الفاصوليا البيضاء التقليدية",
-            "es": "Ensalada tradicional de alubias blancas",
-            "de": "Traditioneller weißer Bohnensalat"
-          },
-          "fiyat": "200,00 TL",
-          "gorsel": "image/yemekler/piyaz.png"
+          "fiyat": "300,00 TL",
+          "gorsel": "image/hamburgerler/hamburger.png"
         }
       ]
     },
@@ -1388,56 +1384,6 @@
           },
           "fiyat": "90,00 TL",
           "gorsel": "image/makarnalar/spagettinapolitan.jpg"
-        }
-      ]
-    },
-    {
-      "id": "hamburgerler",
-      "isim": {
-        "tr": "Hamburgerler",
-        "en": "Burgers",
-        "ar": "برغر",
-        "es": "Hamburguesas",
-        "de": "Burger"
-      },
-      "icon": "🍔",
-      "renk": "#D35400",
-      "urunler": [
-        {
-          "isim": {
-            "tr": "Tavuk Burger",
-            "en": "Chicken Burger",
-            "ar": "برغر دجاج",
-            "es": "Hamburguesa de Pollo",
-            "de": "Chicken Burger"
-          },
-          "aciklama": {
-            "tr": "Tavuk burger",
-            "en": "Chicken burger",
-            "ar": "برغر دجاج",
-            "es": "Hamburguesa de pollo",
-            "de": "Hähnchen-Burger"
-          },
-          "fiyat": "250,00 TL",
-          "gorsel": "image/hamburgerler/tavukburger.jpeg"
-        },
-        {
-          "isim": {
-            "tr": "Hamburger",
-            "en": "Hamburger",
-            "ar": "همبرغر",
-            "es": "Hamburguesa",
-            "de": "Hamburger"
-          },
-          "aciklama": {
-            "tr": "Hamburger",
-            "en": "Hamburger",
-            "ar": "همبرغر",
-            "es": "Hamburguesa",
-            "de": "Hamburger"
-          },
-          "fiyat": "300,00 TL",
-          "gorsel": "image/hamburgerler/hamburger.png"
         }
       ]
     }

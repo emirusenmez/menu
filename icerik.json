@@ -658,6 +658,92 @@
       ]
     },
     {
+      "id": "aperatifler",
+      "isim": {
+        "tr": "Aperatifler",
+        "en": "Appetizers",
+        "ar": "المقبلات",
+        "es": "Aperitivos",
+        "de": "Vorspeisen"
+      },
+      "icon": "🍟",
+      "renk": "#2C5F2D",
+      "urunler": [
+        {
+          "isim": {
+            "tr": "Patates Kizartmasi",
+            "en": "French Fries",
+            "ar": "بطاطس مقلية",
+            "es": "Papas Fritas",
+            "de": "Pommes Frites"
+          },
+          "aciklama": {
+            "tr": "Citir patates kizartmasi",
+            "en": "Crispy french fries",
+            "ar": "بطاطس مقرمشة",
+            "es": "Papas fritas crujientes",
+            "de": "Knusprige Pommes Frites"
+          },
+          "fiyat": "55,00 TL",
+          "gorsel": "image/aperatifler/patateskizartmasi.png"
+        },
+        {
+          "isim": {
+            "tr": "Sogan Halkasi",
+            "en": "Onion Rings",
+            "ar": "حلقات البصل",
+            "es": "Aros de Cebolla",
+            "de": "Zwiebelringe"
+          },
+          "aciklama": {
+            "tr": "Citir kaplamali sogan halkasi",
+            "en": "Crispy coated onion rings",
+            "ar": "حلقات بصل مقرمشة",
+            "es": "Aros de cebolla rebozados crujientes",
+            "de": "Knusprig panierte Zwiebelringe"
+          },
+          "fiyat": "60,00 TL",
+          "gorsel": "image/aperatifler/soganhalkasi.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Tavuk Sepeti",
+            "en": "Chicken Basket",
+            "ar": "سلة الدجاج",
+            "es": "Canasta de Pollo",
+            "de": "Hähnchen-Korb"
+          },
+          "aciklama": {
+            "tr": "Citir tavuk parçalari sepette",
+            "en": "Crispy chicken pieces in basket",
+            "ar": "قطع دجاج مقرمشة في السلة",
+            "es": "Trozos de pollo crujientes en canasta",
+            "de": "Knusprige Hähnchenteile im Korb"
+          },
+          "fiyat": "120,00 TL",
+          "gorsel": "image/aperatifler/tavuk_sepeti.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Karisik Atistirmalik",
+            "en": "Mixed Snacks",
+            "ar": "وجبات خفيفة مشكلة",
+            "es": "Bocadillos Mixtos",
+            "de": "Gemischte Snacks"
+          },
+          "aciklama": {
+            "tr": "Karisik citir lezzetler",
+            "en": "Mixed crispy delights",
+            "ar": "مقرمشات مشكلة لذيذة",
+            "es": "Delicias crujientes mixtas",
+            "de": "Gemischte knusprige Köstlichkeiten"
+          },
+          "fiyat": "95,00 TL",
+          "gorsel": "image/aperatifler/karisikatistirmalik.jpeg"
+        }
+      ]
+    },
+    {
       "id": "sicak-icecekler",
       "isim": {
         "tr": "Sicak Icecekler",
@@ -1174,92 +1260,6 @@
           },
           "fiyat": "30,00 TL",
           "gorsel": "image/masa-sarji/masasarji.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "aperatifler",
-      "isim": {
-        "tr": "Aperatifler",
-        "en": "Appetizers",
-        "ar": "المقبلات",
-        "es": "Aperitivos",
-        "de": "Vorspeisen"
-      },
-      "icon": "🍟",
-      "renk": "#2C5F2D",
-      "urunler": [
-        {
-          "isim": {
-            "tr": "Patates Kizartmasi",
-            "en": "French Fries",
-            "ar": "بطاطس مقلية",
-            "es": "Papas Fritas",
-            "de": "Pommes Frites"
-          },
-          "aciklama": {
-            "tr": "Citir patates kizartmasi",
-            "en": "Crispy french fries",
-            "ar": "بطاطس مقرمشة",
-            "es": "Papas fritas crujientes",
-            "de": "Knusprige Pommes Frites"
-          },
-          "fiyat": "55,00 TL",
-          "gorsel": "image/aperatifler/patateskizartmasi.png"
-        },
-        {
-          "isim": {
-            "tr": "Sogan Halkasi",
-            "en": "Onion Rings",
-            "ar": "حلقات البصل",
-            "es": "Aros de Cebolla",
-            "de": "Zwiebelringe"
-          },
-          "aciklama": {
-            "tr": "Citir kaplamali sogan halkasi",
-            "en": "Crispy coated onion rings",
-            "ar": "حلقات بصل مقرمشة",
-            "es": "Aros de cebolla rebozados crujientes",
-            "de": "Knusprig panierte Zwiebelringe"
-          },
-          "fiyat": "60,00 TL",
-          "gorsel": "image/aperatifler/soganhalkasi.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Tavuk Sepeti",
-            "en": "Chicken Basket",
-            "ar": "سلة الدجاج",
-            "es": "Canasta de Pollo",
-            "de": "Hähnchen-Korb"
-          },
-          "aciklama": {
-            "tr": "Citir tavuk parçalari sepette",
-            "en": "Crispy chicken pieces in basket",
-            "ar": "قطع دجاج مقرمشة في السلة",
-            "es": "Trozos de pollo crujientes en canasta",
-            "de": "Knusprige Hähnchenteile im Korb"
-          },
-          "fiyat": "120,00 TL",
-          "gorsel": "image/aperatifler/tavuk_sepeti.jpg"
-        },
-        {
-          "isim": {
-            "tr": "Tavuk Burger",
-            "en": "Chicken Burger",
-            "ar": "برجر الدجاج",
-            "es": "Hamburguesa de Pollo",
-            "de": "Hähnchen-Burger"
-          },
-          "aciklama": {
-            "tr": "Izgara tavuk burger, patates ile",
-            "en": "Grilled chicken burger with fries",
-            "ar": "برجر دجاج مشوي مع البطاطس",
-            "es": "Hamburguesa de pollo a la parrilla con papas",
-            "de": "Gegrillter Hähnchen-Burger mit Pommes"
-          },
-          "fiyat": "110,00 TL",
-          "gorsel": "image/aperatifler/tavukburger.jpg"
         }
       ]
     }

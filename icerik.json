@@ -828,6 +828,7 @@
           "gorsel": "image/Icecekler/sicak-icecekler/sahlep.png"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Mihrima Sultan Sutlu",
             "en": "Mihrima Sultan with Milk",
@@ -1208,7 +1209,7 @@
             "es": "Varios sabores (Manzana, Uva, Durazno, Melón, Sandía)",
             "de": "Verschiedene Geschmacksrichtungen (Apfel, Traube, Pfirsich, Melone, Wassermelone)"
           },
-          "fiyat": "350,00 TL",
+          "fiyat": "250,00 TL",
           "gorsel": "image/nargileler/nargile_aromalilar.jpg"
         },
         {
@@ -1226,7 +1227,7 @@
             "es": "Narguile tombeki tradicional",
             "de": "Traditionelle Tombeki-Wasserpfeife"
           },
-          "fiyat": "350,00 TL",
+          "fiyat": "250,00 TL",
           "gorsel": "image/nargileler/tombeki_nargile.jpg"
         }
       ]

@@ -654,6 +654,24 @@
           },
           "fiyat": "100,00 TL",
           "gorsel": "image/kahveler/soguk-kahveler/981-icecaramelmacchiato.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Xpress",
+            "en": "Xpress",
+            "ar": "إكسبريس",
+            "es": "Xpress",
+            "de": "Xpress"
+          },
+          "aciklama": {
+            "tr": "Soğuk Nescafe Xpress kahve",
+            "en": "Iced coffee",
+            "ar": "قهوة مثلجة",
+            "es": "Café helado",
+            "de": "Eiskaffee"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": "image/kahveler/soguk-kahveler/Xpress.png"
         }
       ]
     },

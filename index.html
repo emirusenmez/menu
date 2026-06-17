@@ -781,7 +781,7 @@
                 menuData = await response.json();
 
                 // Tum urunleri duz liste yap (arama icin)
-                menuData.kategoriler.forEach(kat => {
+                menuData.kategoriler.filter(kat => !kat.gizli).forEach(kat => {
                     kat.urunler.filter(u => !u.gizli).forEach(urun => {
                         allProducts.push({
                             ...urun,
@@ -924,7 +924,7 @@
                 'hamburgerler': 'image/hamburgerler/hamburger.png'
             };
 
-            grid.innerHTML = menuData.kategoriler.map(kat => `
+            grid.innerHTML = menuData.kategoriler.filter(kat => !kat.gizli).map(kat => `
                 <div class="category-card" data-category="${kat.id}">
                     <div class="category-image">
                         <img src="${categoryImages[kat.id]}" alt="${kat.isim[currentLang]}">
@@ -944,7 +944,7 @@
         function renderCategoryTabs() {
             const tabs = document.getElementById('category-tabs');
 
-            tabs.innerHTML = menuData.kategoriler.map((kat, i) => `
+            tabs.innerHTML = menuData.kategoriler.filter(kat => !kat.gizli).map((kat, i) => `
                 <button class="category-tab ${i === 0 ? 'active' : ''}" data-target="${kat.id}">${kat.isim[currentLang]}</button>
             `).join('');
 
@@ -959,11 +959,12 @@
         function renderMenuPage() {
             const menuPage = document.getElementById('menu-page');
 
-            menuPage.innerHTML = menuData.kategoriler.map(kat => `
+            menuPage.innerHTML = menuData.kategoriler.filter(kat => !kat.gizli).map(kat => `
                 <section class="menu-category" id="${kat.id}">
                     <div class="menu-category-header">
                         <span>${kat.icon}</span> ${kat.isim[currentLang]}
                     </div>
+                    ${kat.not ? `<div class="menu-category-note" style="padding:8px 16px;font-size:13px;font-style:italic;color:#C75B39;">${kat.not[currentLang] || kat.not['tr'] || ''}</div>` : ''}
                     ${kat.urunler.filter(u => !u.gizli).map((urun, idx) => `
                         <div class="product-card" onclick='openProductDetail(${JSON.stringify(urun).replace(/'/g, "&#39;")})'>
                             <div class="product-info">

@@ -120,7 +120,7 @@
             "es": "Tostado con salchicha sujuk",
             "de": "Toast mit Sucuk-Wurst"
           },
-          "fiyat": "150,00 TL",
+          "fiyat": "160,00 TL",
           "gorsel": "image/tostlar/sucuklutost.png"
         },
         {
@@ -138,7 +138,7 @@
             "es": "Tostado con carne asada",
             "de": "Toast mit gebratenem Fleisch"
           },
-          "fiyat": "150,00 TL",
+          "fiyat": "180,00 TL",
           "gorsel": "image/tostlar/kavurmalitost.jpeg"
         },
         {
@@ -156,7 +156,7 @@
             "es": "Tostado con sujuk y queso kashar",
             "de": "Toast mit Sucuk und Kashkaval-Käse"
           },
-          "fiyat": "140,00 TL",
+          "fiyat": "170,00 TL",
           "gorsel": "image/tostlar/sucuklutost.png"
         },
         {
@@ -210,6 +210,7 @@
           "gorsel": "image/yemekler/mercimek-corba.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Kokorec",
             "en": "Kokorec",
@@ -340,6 +341,7 @@
           "gorsel": "image/yemekler/ekmek_arasi_kofte.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Tavuk Porsiyon",
             "en": "Chicken Plate",
@@ -358,6 +360,7 @@
           "gorsel": "image/yemekler/tavuk_sis_porsiyon.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Tavuk Ekmek Arasi",
             "en": "Chicken Sandwich",
@@ -408,6 +411,7 @@
       "renk": "#D35400",
       "urunler": [
         {
+          "gizli": true,
           "isim": {
             "tr": "Citir Tavuk Burger",
             "en": "Crispy Chicken Burger",
@@ -512,6 +516,7 @@
           "gorsel": "image/kahveler/sicak-kahveler/126-americano2.png"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Cafe Latte",
             "en": "Cafe Latte",
@@ -530,6 +535,7 @@
           "gorsel": "image/kahveler/sicak-kahveler/976-cafelatte.png"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Espresso Macchiato",
             "en": "Espresso Macchiato",
@@ -548,6 +554,7 @@
           "gorsel": "image/kahveler/sicak-kahveler/908-espressomacchiato.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "White Chocolate Mocha",
             "en": "White Chocolate Mocha",
@@ -584,6 +591,7 @@
           "gorsel": "image/kahveler/sicak-kahveler/855-nescafesade.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Nescafe Sutlu",
             "en": "Nescafe with Milk",
@@ -602,6 +610,7 @@
           "gorsel": "image/kahveler/sicak-kahveler/358-nescafesutlu.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Ice Latte",
             "en": "Ice Latte",
@@ -620,6 +629,7 @@
           "gorsel": "image/kahveler/soguk-kahveler/435-icelatte.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Ice Americano",
             "en": "Ice Americano",
@@ -638,6 +648,7 @@
           "gorsel": "image/kahveler/soguk-kahveler/788-iceamericano.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Ice Caramel Macchiato",
             "en": "Ice Caramel Macchiato",
@@ -702,10 +713,11 @@
             "es": "Papas fritas crujientes",
             "de": "Knusprige Pommes Frites"
           },
-          "fiyat": "55,00 TL",
+          "fiyat": "110,00 TL",
           "gorsel": "image/aperatifler/patateskizartmasi.png"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Sogan Halkasi",
             "en": "Onion Rings",
@@ -724,6 +736,7 @@
           "gorsel": "image/aperatifler/soganhalkasi.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Tavuk Sepeti",
             "en": "Chicken Basket",
@@ -742,6 +755,7 @@
           "gorsel": "image/aperatifler/tavuk_sepeti.jpg"
         },
         {
+          "gizli": true,
           "isim": {
             "tr": "Karisik Atistirmalik",
             "en": "Mixed Snacks",
@@ -836,11 +850,11 @@
             "de": "Sahlep"
           },
           "aciklama": {
-            "tr": "Geleneksel sicak sahlep",
-            "en": "Traditional hot sahlep",
-            "ar": "سحلب ساخن تقليدي",
-            "es": "Sahlep caliente tradicional",
-            "de": "Traditioneller heißer Sahlep"
+            "tr": "Geleneksel sicak sahlep (Mevsimlik)",
+            "en": "Traditional hot sahlep (Seasonal)",
+            "ar": "سحلب ساخن تقليدي (موسمي)",
+            "es": "Sahlep caliente tradicional (De temporada)",
+            "de": "Traditioneller heißer Sahlep (Saisonal)"
           },
           "fiyat": "100,00 TL",
           "gorsel": "image/Icecekler/sicak-icecekler/sahlep.png"
@@ -893,7 +907,7 @@
             "es": "Coca Cola 330ml",
             "de": "Coca Cola 330ml"
           },
-          "fiyat": "70,00 TL",
+          "fiyat": "100,00 TL",
           "gorsel": "image/Icecekler/soguk-icecekler/kola.jpg"
         },
         {
@@ -911,7 +925,7 @@
             "es": "Fanta 330ml",
             "de": "Fanta 330ml"
           },
-          "fiyat": "70,00 TL",
+          "fiyat": "100,00 TL",
           "gorsel": "image/Icecekler/soguk-icecekler/fanta.jpg"
         },
         {
@@ -929,7 +943,7 @@
             "es": "Sprite 330ml",
             "de": "Sprite 330ml"
           },
-          "fiyat": "70,00 TL",
+          "fiyat": "100,00 TL",
           "gorsel": "image/Icecekler/soguk-icecekler/sprite.jpg"
         },
         {
@@ -965,7 +979,7 @@
             "es": "Bebida energética Red Bull 250ml",
             "de": "Red Bull Energy-Drink 250ml"
           },
-          "fiyat": "120,00 TL",
+          "fiyat": "150,00 TL",
           "gorsel": "image/Icecekler/soguk-icecekler/redbul.jpg"
         },
         {
@@ -983,7 +997,7 @@
             "es": "Ayran soda con frutas",
             "de": "Fruchtiger Ayran-Soda"
           },
-          "fiyat": "35,00 TL",
+          "fiyat": "50,00 TL",
           "gorsel": "image/Icecekler/soguk-icecekler/ayransoda.jpg"
         },
         {
@@ -1001,7 +1015,7 @@
             "es": "Soda con varios sabores de frutas",
             "de": "Soda mit verschiedenen Fruchtgeschmäckern"
           },
-          "fiyat": "40,00 TL",
+          "fiyat": "50,00 TL",
           "gorsel": "image/Icecekler/soguk-icecekler/meyvelisoda.jpg"
         },
         {
@@ -1019,7 +1033,7 @@
             "es": "Jugo natural de durazno",
             "de": "Natürlicher Pfirsichsaft"
           },
-          "fiyat": "70,00 TL",
+          "fiyat": "100,00 TL",
           "gorsel": "image/Icecekler/soguk-icecekler/seftalisuyu.webp"
         },
         {
@@ -1037,8 +1051,26 @@
             "es": "Jugo natural de cereza ácida",
             "de": "Natürlicher Sauerkirschsaft"
           },
-          "fiyat": "70,00 TL",
+          "fiyat": "100,00 TL",
           "gorsel": "image/Icecekler/soguk-icecekler/meysu-meyve-visne-200.jpg"
+        },
+        {
+          "isim": {
+            "tr": "Limonata",
+            "en": "Lemonade",
+            "ar": "ليموناضة",
+            "es": "Limonada",
+            "de": "Limonade"
+          },
+          "aciklama": {
+            "tr": "Taze limonata",
+            "en": "Fresh lemonade",
+            "ar": "ليموناضة طازجة",
+            "es": "Limonada fresca",
+            "de": "Frische Limonade"
+          },
+          "fiyat": "100,00 TL",
+          "gorsel": ""
         },
         {
           "isim": {
@@ -1062,6 +1094,7 @@
     },
     {
       "id": "tatlilar",
+      "gizli": true,
       "isim": {
         "tr": "Tatlilar",
         "en": "Desserts",
@@ -1211,6 +1244,13 @@
       },
       "icon": "💨",
       "renk": "#1E3A5F",
+      "not": {
+        "tr": "Kafa değişimi +250 TL",
+        "en": "Bowl change +250 TL",
+        "ar": "تغيير الرأس +250 ليرة",
+        "es": "Cambio de cazoleta +250 TL",
+        "de": "Kopfwechsel +250 TL"
+      },
       "urunler": [
         {
           "isim": {
